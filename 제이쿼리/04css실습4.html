@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/04css_style4.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="title">
+        <div class="titleTop">
+          <h2>News & Event</h2>
+          <a href="#"
+            ><span>SEE ALL</span><i class="rotate fa-solid fa-plus"></i
+          ></a>
+        </div>
+        <h3>제품 소식부터 이벤트까지, 다양한 정보를 만나보세요.</h3>
+      </div>
+      <div class="center">
+        <div class="left">
+          <ul class="leftTop">
+            <li>
+              <div class="fill"></div>
+              <div class="txt">브랜드 소식</div>
+            </li>
+
+            <li>
+              <div class="fill"></div>
+              <div class="txt">제품 소식</div>
+            </li>
+            <li>
+              <div class="fill"></div>
+              <div class="txt">이벤트</div>
+            </li>
+          </ul>
+          <ul class="leftBottom">
+            <li><i class="fa-solid fa-arrow-left"></i></li>
+            <li><i class="fa-solid fa-arrow-right"></i></li>
+          </ul>
+        </div>
+        <ul class="right">
+          <li>
+            <img src="img/p1.jpg" />
+            <div class="txt">
+              <h3>홈페이지 리뉴얼 기념, Fall in BLUE!</h3>
+              <div class="date">2025.08.27</div>
+            </div>
+          </li>
+          <li>
+            <img src="img/p2.jpg" />
+            <div class="txt">
+              <h3>홈페이지 리뉴얼 기념, Fall in BLUE!</h3>
+              <div class="date">2025.08.27</div>
+            </div>
+          </li>
+          <li>
+            <img src="img/p3.jpg" />
+            <div class="txt">
+              <h3>홈페이지 리뉴얼 기념, Fall in BLUE!</h3>
+              <div class="date">2025.08.27</div>
+            </div>
+          </li>
+          <li>
+            <img src="img/p4.jpg" />
+            <div class="txt">
+              <h3>홈페이지 리뉴얼 기념, Fall in BLUE!</h3>
+              <div class="date">2025.08.27</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      //마우스엔터시 아이콘 회전
+      $(".titleTop a").on("mouseenter", function () {
+        $(this)
+          .find(".rotate")
+          .css({ transform: "rotate(90deg)", transition: ".5s" });
+      });
+      $(".titleTop a").on("mouseleave", function () {
+        $(this)
+          .find(".rotate")
+          .css({ transform: "rotate(0deg)", transition: ".5s" });
+      });
+      //
+
+      //마우스엔터시 leftTop li 채우기
+      $(".leftTop li").on("mouseenter", function () {
+        $(this).find(".fill").css({ transform: "translateX(0px)" });
+        $(this).css({ color: "#fff" });
+        $(this).css({ border: "1px solid #008290" });
+      });
+      //
+      //마우스리브시 원복
+      $(".leftTop li").on("mouseleave", function () {
+        $(this).find(".fill").css({ transform: "translateX(-130px)" });
+        $(this).css({ color: "#616161" });
+        $(this).css({ border: "1px solid #616161" });
+      });
+      //
+      //클릭시 css고정
+      $(".leftTop li").on("click", function () {
+        $(this).off("mouseleave"); //클릭시 해당선택자의 마우스리브효과 끄기
+        $(".leftTop li").css({
+          color: "#616161",
+          border: "1px solid #616161",
+        }); //클릭시 leftTop li 전체 css적용
+        $(this).css({ color: "#fff", border: "1px solid #008290" });
+      });
+      //
+      $(".right li").on("mouseenter", function () {
+        $(".right li .date").css({ "margin-top": "20px" });
+        $(this).find(".date").css({ "margin-top": "165px" });
+      });
+      $(".right li").on("mouseleave", function () {
+        $(".right li .date").css({ "margin-top": "20px" });
+      });
+    </script>
+  </body>
+</html>

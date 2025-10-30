@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .wrap {
+            background-color: #ccc;
+            width: 70%;
+        }
+
+        .wrap:hover {
+            background-color: orange;
+        }
+
+        .wrap:hover p {
+            color: red;
+        }
+
+        .wrap2 li:nth-child(1) {
+            color: red;
+        }
+
+        .wrap2 li:first-child {
+            text-decoration: underline;
+        }
+
+        .wrap2 li:last-child {
+            color: red;
+        }
+
+        .wrap2 li:nth-child(odd) {
+            background-color: #ccc;
+        }
+
+        .wrap2 h3:before {
+            content: "new";
+            background-color: orange;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .wrap2 h3:after {
+            content: "**"
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h3>가상클래스</h3>
+        <p>가상요소</p>
+    </div>
+    <div class="wrap2">
+        <h3>가상클래스 선택자</h3>
+        <ul>
+            <li>위치1</li>
+            <li>위치2</li>
+            <li>위치3</li>
+            <li>위치4</li>
+        </ul>
+        <p>내용</p>
+        <button>클릭</button>
+        <div class="wrap3">
+            <p>내용입니다</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

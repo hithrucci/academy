@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.wrap {
+    background-image: url(../img/pic1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.wrap div {
+    font-size: 50px;
+}
+
+.wrap h3 {
+    font-size: 60px;
+}
+
+.wrap span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.wrap p {
+    font-size: 20px;
+}

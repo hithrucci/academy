@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      div {
+        width: 500px;
+        height: 200px;
+        background-color: orange;
+        transition: 1s;
+      }
+
+      .on {
+        width: 200px;
+        height: 300px;
+        background-color: #ccc;
+        border: 1px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div>글자</div>
+    <button class="btn">css</button>
+    <button class="btn_add">추가</button>
+    <button class="btn_remove">삭제</button>
+    <button class="btn_toggle">추가 및 삭제</button>
+    <script>
+      $(".btn").on("click", function () {
+        $("div").css({
+          width: "200px",
+          height: "300px",
+          border: "1px solid #333",
+          "background-color": "#ccc",
+        });
+      });
+      $(".btn_add").on("click", function () {
+        $("div").addClass("on");
+      });
+      $(".btn_remove").on("click", function () {
+        $("div").removeClass("on");
+      });
+      $(".btn_toggle").on("click", function () {
+        $("div").toggleClass("on");
+      });
+    </script>
+  </body>
+</html>
+<!--
+
+addClass("클래스명") :: 클래스 추가(.안붙임)
+removeClass("클래스명") :: 클래스 삭제
+toggleClass("클래스명") :: 클래스 추가/삭제
+
+
+css를 이용해서 스타일을 제어할 수 있지만
+스타일이 많으면 복잡해보임
+이럴 때는 클래스를 만들고
+해당 클래스 안에 스탕리을 넣은 후
+addClass
+removeClass
+toggleClass를 이용하면
+ 제이쿼리가 깔금하게 보일 수 있음
+
+-->

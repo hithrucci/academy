@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var i = 10;
+      //   console.log(i);
+      //   var i = 20;
+      //   console.log(i);
+
+      //   let i = 10;
+      //   console.log(i);
+      //   let i = 20;
+      //   console.log(i);
+
+      let num = 10;
+      console.log(num);
+      let Num = 20;
+      console.log(Num); //대소문자를 구분함.
+
+      let year = prompt("당신의 출생년도를 입력하세요");
+      let age = 2025 - year;
+      if (age > 0) {
+        alert(`당신의 나이는 ${age}입니다.`);
+      } else {
+        alert("잘못입력하셨습니다.");
+      }
+    </script>
+  </body>
+</html>
+<!--
+변수 :: 자료를 담는 그릇
+변수를 선언할 때는
+let :: 변하는 데이터를 저장할 때 사용. let을 이용해서 같은 변수를 또 만들 수 없음
+const :: 고유한 데이터를 저장할 때 사용.
+  ex)주민번호,생년월일 등.
+var :: 예전 방식, 반복을 할 수 잇음. 변수 앞에 선언을 하지 않으면 var로 인식
+
+변수명을 만들때는 
+1. 첫글자는 영어,_(언더바),$ 를 사용할 수 있다.
+2. 대소문자를 구분함
+3. 띄어쓰기 사용 불가
+4. 예약어는 사용 불가
+
+-카멜 표기법 :: 단어+단어 조합일 때 뒷단어의 첫글자는 대문자로.(ex)ueserAge)
+-파스칼 표기법 :: 모두 첫글자는 대문자로.(ex)UserAge)
+-언더스코어표기법 :: 언더바 사용(ex)user_age)
+
+const는 변수에 데이터를 한번만 넣을 수 있음.
+
+const i = 10;
+i = 20;
+불가
+
+
+
+-->

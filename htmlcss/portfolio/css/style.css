@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+
+/*------header------*/
+header {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #aaa;
+    position: fixed;
+    width: 100%;
+    z-index: 3
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-size: 15px;
+
+}
+
+.bg {}
+
+header a {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav li {
+    padding: 15px;
+
+}
+
+nav li:hover {
+    background-color: #ccc;
+
+}
+
+nav>i {
+    padding: 15px;
+}
+
+nav>i:hover {
+    background-color: red;
+    color: #fff;
+}
+
+/*------visual------*/
+#visual {
+    /* background-image: url(../img/parallax1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+    width: 100%;
+
+    height: 1000px;
+    position: relative;
+    background-image: url(../img/parallax1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: opacity(80%);
+}
+
+#visual h1 {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 7px;
+    z-index: 0;
+}
+
+
+
+/*------container------*/
+
+#container {
+    color: #777;
+    padding-bottom: 200px;
+}
+
+
+
+/*------con01------*/
+.con01 {
+    background-color: #fff;
+    padding: 50px 0px 0px;
+}
+
+.con01 .wrap {
+    width: 980px;
+    margin: 0px auto;
+}
+
+
+/*------con01.top------*/
+.con01 h2,
+.con01 .italic {
+    text-align: center;
+}
+
+.con01 h2 {
+    font-weight: normal;
+}
+
+.con01 .italic {
+    font-style: italic;
+    margin: 20px 0px;
+}
+
+.con01 .profile {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    padding: 0px 20px;
+}
+
+.con01 .left img {
+    width: 420px;
+    border-radius: 8px;
+    filter: brightness(0.8)
+}
+
+.con01 .left img:hover {
+    filter: brightness(1);
+}
+
+
+.con01 .name {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 15px;
+    align-items: center;
+
+}
+
+.con01 .name h3 {
+    font-weight: normal;
+
+}
+
+
+/*------con01.graph------*/
+.con01 .graph {
+    margin-top: 50px;
+}
+
+.con01 .graph h3 {
+    font-weight: normal;
+    text-align: center;
+    margin: 50px;
+}
+
+.con01 .graph .title {
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.con01 .graph .bg_bar {
+    background-color: #ddd;
+    height: 40px;
+    position: relative;
+    bottom: 40px;
+    z-index: 0;
+    width: 100%;
+}
+
+.con01 .photo_bar {
+    background-color: #555;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+
+.con01 .web_bar {
+    background-color: #555;
+    width: 85%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+
+.con01 .ps_bar {
+    background-color: #555;
+    width: 75%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+
+
+
+/*------con01.bottom------*/
+.con01 .bottom {}
+
+.con01 .bottom {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 80px;
+    align-items: center;
+    color: #fff;
+    background-color: #555;
+}
+
+.con01 .bottom li {
+    text-align: center;
+}
+
+.con01 .bottom h3 {
+    font-size: 30px;
+}
+
+.con01 .bottom h3,
+.con01 .bottom h4 {
+    font-weight: normal;
+
+}
+
+/*------con02------*/
+.con02 {}
+
+.con02 .bg {
+
+    background-image: url(../img/parallax2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    position: relative;
+
+
+}
+
+.con02 h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.con02 .wrap {
+    background-color: #fff;
+}
+
+.con02 .work {
+    width: 980px;
+    margin: 0px auto;
+    padding-top: 60px;
+}
+
+.con02 .work h3,
+.con02 .work p {
+    text-align: center;
+}
+
+.con02 .work h3 {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.con02 .work p {
+    font-style: italic;
+    margin: 30px 0px;
+}
+
+.con02 .pic {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.con02 .pic img {
+    width: calc(100% / 4 - 20px);
+
+}
+
+.con02 .more {
+    color: #000;
+    background-color: #ddd;
+    width: 110px;
+    margin: 60px auto;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.con02 .more:hover {
+    background-color: #ccc;
+}
+
+.con02 .more a {
+    display: block;
+}
+
+
+
+/*------con03------*/
+.con03 {}
+
+.con03 .bg {
+    background-image: url(../img/parallax3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+.con03 h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 35px;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.con03 .wrap {
+    width: 980px;
+    margin: 0px auto;
+}
+
+.con03 .wrap h3 {
+    font-weight: normal;
+    margin-top: 60px;
+
+}
+
+.con03 .wrap>p {
+    font-style: italic;
+    margin: 30px 0px 60px;
+}
+
+.con03 .wrap h3,
+.con03 .wrap>p {
+    text-align: center;
+
+
+}
+
+.con03 .map {
+    display: flex;
+    gap: 50px;
+    align-items:
+}
+
+
+
+.con03 .map img {
+    width: 30%;
+    border-radius: 5px;
+    object-fit: cover;
+    height: 250px;
+}
+
+.con03 .map li {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+
+
+.con03 .insert ul {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.con03 .right p {
+    margin-bottom: 30px;
+}
+
+.con03 .insert li {
+    border: 1px solid #ccc;
+
+}
+
+.con03 .insert .name {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.con03 .insert .msg {
+    width: 522px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.con03 .insert {
+    position: relative;
+}
+
+.con03 .insert div {
+    color: #fff;
+    background-color: #000;
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: -70px;
+    right: 0px;
+}
+
+.con03 .insert div a {
+    display: block;
+}
+
+
+/*------footer------*/
+footer {
+
+    background-color: #666;
+    height: 300px;
+    color: #fff;
+    position: relative;
+}
+
+
+
+footer:hover {
+    background-color: #000;
+
+}
+
+footer .wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+footer .box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    color: #777;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+footer .box:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+footer .icons {
+    margin: 20px 0px;
+    font-size: 23px;
+    letter-spacing: -10px;
+}
+
+footer:hover .box {
+    color: #000
+}
+
+footer .power a {
+    text-decoration: underline;
+}
+
+footer .power a:hover {
+    color: green;
+}

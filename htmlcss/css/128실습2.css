@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrap {
+    background-image: url(../img/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 500px;
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+
+    margin: 400px 0px 30px 50px;
+}
+
+.left h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+
+.left .date {
+    font-size: 10px;
+}
+
+.right {
+
+    right: 60px;
+    bottom: 40px;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+span {
+    color: bisque
+}

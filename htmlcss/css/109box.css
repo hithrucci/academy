@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box5 {
+    border: 10px solid red;
+    padding: 30px;
+}

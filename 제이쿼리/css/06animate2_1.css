@@ -1,0 +1,8 @@
+body {
+  background-color: purple;
+  color: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

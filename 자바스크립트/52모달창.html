@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /*==================================*/
+
+      /*content*/
+      .content {
+        height: 100vh;
+        width: 70%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text {
+        font-size: 18px;
+        color: #444;
+        border: 2px solid #ccc;
+        border-radius: 30px;
+        padding: 50px;
+        word-break: keep-all;
+      }
+
+      #open {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 50px;
+        color: #fff;
+        background-color: tomato;
+        width: 180px;
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid #666;
+        box-shadow: 1px 1px 10px #666;
+      }
+      /*modalBox*/
+      #modalBox {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: none;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #modalBox.on {
+        display: flex;
+      }
+
+      #modalContent {
+        width: 50%;
+        padding: 20px;
+        background-color: #fff;
+        position: relative;
+      }
+      #close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 24px;
+        border: 0;
+        background-color: transparent;
+      }
+      img {
+        width: 100%;
+      }
+      #modalContent h2 {
+        margin: 20px 0px;
+      }
+      .modalText {
+        margin-top: 20px;
+      }
+      .modalText p {
+        margin: 10px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, minus
+        quisquam optio a blanditiis iure similique distinctio saepe, corrupti
+        quis dolorum, hic sunt ab! Facere architecto maiores nemo. Quas,
+        ratione?
+      </div>
+      <button id="open">프로필 보기</button>
+    </div>
+    <div id="modalBox">
+      <div id="modalContent">
+        <button id="close">x</button>
+        <h2>My Profile</h2>
+        <div class="profile">
+          <img src="img/pic1.jpg" alt="" />
+          <div class="modalText">
+            <p>이름 : MBC</p>
+            <p>주소 : 화곡동</p>
+            <p>연락처 : 000-000-0000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let open = document.querySelector("#open");
+      let modal = document.querySelector("#modalBox");
+      let close = document.querySelector("#close");
+      open.addEventListener("click", () => {
+        modal.classList.add("on");
+      });
+      close.addEventListener("click", () => {
+        modal.classList.remove("on");
+      });
+
+      // $("#open").on("click", function () {
+      //   $("#modalBox").addClass("on");
+      // });
+      // $("#close").on("click", function () {
+      //   $("#modalBox").removeClass("on");
+      // });
+    </script>
+  </body>
+</html>

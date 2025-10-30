@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap {
+    margin: 0px auto;
+    /*전체 가운데 정렬*/
+    width: 1000px;
+    /*전체 가운데 정렬을 위한 값*/
+    background-color: #eee;
+    /*배경색*/
+    padding: 30px;
+    /*전체 안쪽여백*/
+
+}
+
+.wrap h3 {
+    font-size: 70px;
+    font-weight: normal;
+    /*strong태그와 두께 구분*/
+    letter-spacing: -2px;
+    /*원본 자간 참조*/
+}
+
+.wrap p {
+    font-size: 25px;
+    margin: 40px 0px;
+    /*아래 위 마진*/
+    color: #333;
+    width: 850px;
+    /*자동줄바꿈을 위한 값*/
+    word-break: keep-all;
+    /*자동줄바꿈시 단어 보호*/
+    line-height: 45px;
+    /*행간 조정*/
+}
+
+ul {
+    display: flex;
+    /*li태그들 1행 정렬*/
+
+    gap: 20px;
+    /*박스 사이 거리*/
+}
+
+li {
+    border: 1px solid #333;
+    border-radius: 5px;
+    /*백그라운드 모서리 r값*/
+    width: 450px;
+    height: 70px;
+    line-height: 70px;
+    /*박스 안 텍스트 세로정렬*/
+    text-align: center;
+    /*박스 안 텍스트 가로 정렬*/
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+}
+
+.blue {
+    background-color: blue;
+    color: #ddd;
+}

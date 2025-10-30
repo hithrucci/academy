@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //i를 1부터 333까지 1씩 증가시킴
+      for (let i = 1; i <= 333; i++) {
+        //i를 문자열로 반환,str 변수에 대입.
+        let str = i.toString();
+        //result 변수 선언, 빈 값
+        result = "";
+        //문자열의 자릿수인 j를 0부터 2까지(100의자리수) 1씩 증가시킴
+        for (let j = 0; j <= 2; j++) {
+          //자릿수에 3또는 6또는 9가 들어가면 result에 박수 이모지 대입
+          if (str[j] == "3" || str[j] == "6" || str[j] == "9") {
+            //박수를 증가시킴,누적합계
+            result += "👏";
+          }
+        }
+        console.log(`${str} - ${result}`);
+      }
+    </script>
+  </body>
+</html>

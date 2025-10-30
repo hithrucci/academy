@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/01custom.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: inherit;
+        color: inherit;
+      }
+      /*---------------*/
+
+      .wrap {
+        padding: 30px;
+        width: 750px;
+
+        background-color: #3b8d82;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        border-radius: 20px;
+      }
+      .menu li {
+        height: 60px;
+        line-height: 60px;
+        width: 180px;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 24px 0px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+      .menu li:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        border: 2px solid #fff;
+      }
+      .on {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .pic li {
+        display: none;
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+        box-shadow: 2px 2px 3px #000;
+      }
+
+      .pic li:first-child {
+        display: block;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul class="menu">
+        <li>스터디언</li>
+        <li>독서연구소</li>
+        <li>영어독립</li>
+        <li>건강하마</li>
+      </ul>
+      <ul class="pic">
+        <li><img src="img/p1.jpg" /></li>
+        <li><img src="img/p2.jpg" /></li>
+        <li><img src="img/p3.jpg" /></li>
+        <li><img src="img/p4.jpg" /></li>
+      </ul>
+    </div>
+  </body>
+  <!-- <script>
+    $("li:first-child").on("click", function () {
+      $("img:first-child").show();
+      $("img:nth-child(2)").hide();
+      $("img:nth-child(3)").hide();
+      $("img:nth-child(4)").hide();
+      $(".wrap div").show();
+    });
+    $("li:nth-child(2)").on("click", function () {
+      $("img:first-child").hide();
+      $("img:nth-child(2)").show();
+      $("img:nth-child(3)").hide();
+      $("img:nth-child(4)").hide();
+      $(".wrap div").show();
+    });
+    $("li:nth-child(3)").on("click", function () {
+      $("img:first-child").hide();
+      $("img:nth-child(2)").hide();
+      $("img:nth-child(3)").show();
+      $("img:nth-child(4)").hide();
+      $(".wrap div").show();
+    });
+    $("li:nth-child(4)").on("click", function () {
+      $("img:first-child").hide();
+      $("img:nth-child(2)").hide();
+      $("img:nth-child(3)").hide();
+      $("img:nth-child(4)").show();
+      $(".wrap div").show();
+    });
+  </script> -->
+</html>

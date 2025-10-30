@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sub = [
+        {
+          name: "홍길동",
+          age: 30,
+        },
+        { name: "mbc", age: 10 },
+      ];
+
+      //기본형
+      let user2 = sub.map((user) => {
+        return user.name;
+      });
+      console.log(user2);
+
+      //축약형
+      let user3 = sub.map((user) => user.age);
+      console.log(user3);
+    </script>
+  </body>
+</html>

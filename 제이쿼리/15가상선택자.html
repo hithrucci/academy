@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        padding: 10px 0px;
+        background-color: orange;
+        text-align: center;
+        /* border-right: 2px solid red; */
+        position: relative;
+      }
+      div::after {
+        /*div의 뒤 라는 뜻*/
+        content: "|";
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      div::before {
+        content: "|";
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div>글자</div>
+    <script>
+      let i = 0; /*첫 변수 선언*/
+      i = 10; /*i의 대입값 변경*/
+      let j = 20;
+    </script>
+  </body>
+</html>

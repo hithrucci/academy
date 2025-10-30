@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "홍길동",
+        age: "25",
+      };
+      //값 조회
+      console.log(person.name);
+      console.log(person.age);
+
+      //객체에 데이터 추가
+      person.job = "개발자";
+      person.location = "화곡";
+      console.log(person);
+
+      //객체에 있는 속성 삭제
+      delete person.age;
+      console.log(person);
+
+      //객체에 대한 value(값) 출력
+      for (let item in person) {
+        //item은 하나씩 받는 변수
+        console.log(item); //key출력
+        console.log(person[item]); //value출력
+      }
+    </script>
+  </body>
+</html>
+<!--
+객체에 속성값을 조회할 때는 객체에 점을 선언하고 해당 속성에 접근하면 됨
+  ex) edu.name
+객체를 수정할 때는 해당 속성에 새로운 값을 할당하면 됨
+  ex)edu.age = 11
+
+삭제할 때는 delete 키워드를 앞에 선언해서 특정 속성을 제거함
+    ex)delete.edu.age  
+
+객체에 대한 반복문은 for in을 사용함
+값을 출력하소 싶으면 변수[key]
+-->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let result = 2 < 3;
+      let result2 = 30 > 50;
+      document.write(`result는 참 또는 거짓 ${result}<br>`);
+      document.write(`result2는 참 또는 거짓 ${result2}<br>`);
+      document.write(
+        `result 그리고 result2는 참 또는 거짓 ${result && result2}<br>`
+      );
+      document.write(
+        `result 또는 result2는 참 또는 거짓 ${result || result2}<br>`
+      );
+      document.write(`result의 반대 ${!result}<br>`);
+      document.write(`result2의 반대 ${!result2}<br>`);
+    </script>
+  </body>
+</html>
+<!--
+&& :: and연산자,둘 다 참이면 결과값이 true
+|| :: or연산자, 둘 중 하나가 참이면 결과값이 true
+! :: not연산자, 결과값이 무조건 반대로 나옴
+
+-->

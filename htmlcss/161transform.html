@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            width: 800px;
+            gap: 20px;
+            margin: 0px auto;
+        }
+
+        li {
+            position: relative;
+            height: 300px;
+            width: calc(100% / 4 - 10px)
+        }
+
+        li img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        li:hover img:nth-child(2) {
+            opacity: 0;
+            transition: .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <img src="img/pic1.jpg" alt="">
+            <img src="img/pic2.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/pic3.jpg" alt="">
+            <img src="img/pic4.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/pic1.jpg" alt="">
+            <img src="img/pic2.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/pic3.jpg" alt="">
+            <img src="img/pic4.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/pic1.jpg" alt="">
+            <img src="img/pic2.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/pic3.jpg" alt="">
+            <img src="img/pic4.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/pic1.jpg" alt="">
+            <img src="img/pic2.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/pic3.jpg" alt="">
+            <img src="img/pic4.jpg" alt="">
+        </li>
+    </ul>
+</body>
+
+</html>

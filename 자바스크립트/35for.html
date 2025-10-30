@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const number = [1, 2, 3, 4, 5];
+      let sum1 = 0;
+      document.write(`for문<br>`);
+      for (i = 0; i < number.length; i++) {
+        document.write(`${number[i]}<br>`);
+        sum1 += number[i];
+      }
+      document.write(`${sum1}<br>`);
+
+      let sum2 = 0;
+      document.write(`<br>`);
+      document.write(`for of문<br>`);
+      for (item of number) {
+        document.write(`${item}<br>`);
+        sum2 += item;
+      }
+      document.write(`${sum2}<br>`);
+
+      let sum3 = 0;
+      document.write(`<br>`);
+      document.write(`forEach문<br>`);
+      number.forEach(function (item) {
+        document.write(`${item}<br>`);
+        sum3 += item;
+      });
+      document.write(sum3);
+    </script>
+  </body>
+</html>

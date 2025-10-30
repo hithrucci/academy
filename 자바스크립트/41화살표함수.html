@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //선언적함수
+      function sum(x, y) {
+        return x + y;
+      }
+      let result = sum(10, 20);
+      document.write(result);
+      document.write(`<br>`);
+
+      //익명함수
+      let sum2 = function (x, y) {
+        return x + y;
+      };
+      let result2 = sum2(20, 30);
+      document.write(result2);
+      document.write(`<br>`);
+
+      //화살표함수
+      let sum3 = (x, y) => {
+        return x + y;
+      };
+      let result3 = sum3(30, 40);
+      document.write(result3);
+    </script>
+  </body>
+</html>
+<!--
+화살표함수
+1. 화살표 함수는 => 기호를 사용하여 function 키워드를 생략함
+2. 매개변수가 없을 경우는 
+() => {
+ 실행문
+}
+
+3. 매개변수가 있는 경우는
+(x,y) => {
+실행문 
+}
+
+데이터값을 가지고 함수를 호출했을 때
+함수에서 받는 변수를 매개변수(x,y)라고 함
+
+
+let number = (x,y) =>{
+실행문
+}
+
+화살표함수는 this를 받을 수 없음
+-->

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+  /* background-color: #ccc; */
+  position: relative;
+}
+.top {
+  width: 0%;
+  height: 3px;
+  background-color: blue;
+}
+.right {
+  width: 3px;
+  height: 0%;
+  background-color: red;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.bottom {
+  width: 0%;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.left {
+  width: 3px;
+  height: 0%;
+  background-color: green;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}

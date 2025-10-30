@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{width:200px;height:200px;background-color: red;}
+        .on{transform: translateX(20px);} */
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        //function으로 만들기
+        // setInterval(function(){
+        //     console.log("안녕하세요")
+        // },5000)
+
+        //화살표함수로 만들기
+        // setInterval(()=>{
+        //     console.log("안녕하세요")
+        // },5000)
+
+    //함수로 만들고 setInterval에서 함수 호출
+    //  function hello(){
+    //     console.log("안녕하세요")
+    //  }
+    //  setInterval(hello,5000)
+
+    //화살표함수로 만들고 setInterval에서 함수 호출
+    hello = ()=>{
+        console.log("안녕하세요")
+    }
+    setInterval(hello,5000)
+    
+    </script>
+</body>
+</html>
+<!--
+
+setInterval()은 일정한 시간 간격으로 코드를 반복 실행하는 함수
+
+형식 
+
+1.
+setInterval(function(){
+실행문
+}, ms)
+
+1-1. 화살표함수
+setInterval(()=>{
+실행문
+},ms)
+
+
+2. 실행문을 함수로 만들고 setInterval에서 함수를 호출
+
+function 함수명 (){
+실행문
+}
+
+setInterval(함수명,ms)
+
+2-1. 화살표 함수
+변수 = () =>{
+실행문
+}
+setInterval(함수명,ms)
+
+-->

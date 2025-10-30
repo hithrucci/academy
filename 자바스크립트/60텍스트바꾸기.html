@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <div id="hello">hello</div>
+    <script>
+        let hello = document.querySelector("#hello");
+        // console.log(hello)
+       hello.addEventListener("click",()=>{
+        // console.log("클릭")
+        // hello.textContent="안녕"
+        // hello.innerText="안녕"
+        hello.innerHTML="<p>안녕</p>"
+       })
+    </script>
+</body>
+</html>
+<!--
+textContent :: 선택자.textContent = "바꿀 내용"
+innerText :: 선택자.innerText = "바꿀 내용"
+innerHTMl :: 선택자.innerHtml = "<span>바꿀 내용</span>"
+선택자에 태그를 추가할 때 사용
+선택자가 부모가 되고, 오른 쪽에 있는 태그는 자식이 됨, 기존 글자는 삭제됨
+
+id는 반복하지 않음, 자바스크립트에서는 변수에 넣음
+ex) <div id="box box1"></div>
+    <div id="box box2"></div>
+    (불가능)
+
+class는 반복할 수 있음, 자바스크립트에서는 배열로 생각됨
+ex) <div class="box box1"></div>
+    <div class="box box2"></div>
+-->

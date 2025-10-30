@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*----------*/
+body {
+  background-color: purple;
+}
+.wrap {
+  width: 300px;
+  color: #fff;
+  padding: 80px 60px;
+}
+.top {
+  /* border: 1px solid #000; */
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+.top h2 {
+  height: 150px;
+  font-size: 50px;
+  position: absolute;
+  bottom: -150px;
+}
+.center {
+  height: 24px;
+  margin: 50px 0px 20px;
+  /* border: 1px solid #000; */
+  position: relative;
+  overflow: hidden;
+}
+.center p {
+  position: absolute;
+  bottom: -24px;
+}
+.bottom {
+  /* border: 1px solid #000; */
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.bottom div {
+  border: 1px solid #fff;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: -50px;
+  box-sizing: border-box;
+}
+.bottom a {
+  display: block;
+}

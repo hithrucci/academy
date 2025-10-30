@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/03custom.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      /*------*/
+      .wrap {
+        border: 1px solid #ccc;
+        width: 190px;
+      }
+      .title {
+        width: 190px;
+        border-bottom: 1px solid #ccc;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        line-height: 25px;
+        cursor: pointer;
+      }
+      .title span {
+        margin-right: 30px;
+      }
+      ul {
+        display: none;
+      }
+      ul li {
+        width: 190px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+      }
+      li {
+        border-bottom: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="title">
+        <span>계열사 바로가기</span><i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <ul>
+        <li><a href="#">동원F&B</a></li>
+        <li><a href="#">동원시스템즈</a></li>
+        <li><a href="#">동원홈푸드</a></li>
+        <li><a href="#">동원데어리푸드</a></li>
+        <li><a href="#">동원팜스</a></li>
+        <li><a href="#">동원와인플러스</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

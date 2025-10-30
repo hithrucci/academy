@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.header {
+    background-image: url(../img/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.headTop {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.topLeft {
+    display: flex;
+    gap: 40px;
+}
+
+.topRight i {
+    font-size: 25px;
+
+}
+
+h1 img {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.topLeft li {
+    font-size: 20px;
+}
+
+.tr_top {
+    display: flex;
+    gap: 20px;
+}
+
+.topRight ul {
+    display: flex;
+    gap: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .inbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    height: 45px;
+    line-height: 45px;
+    padding: 0px 15px;
+    width: 350px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+.inbox div {
+    color: #333;
+}
+
+.inbox a {
+    color: #333;
+}
+
+.headCenter {
+    display: flex;
+    justify-content: center;
+    margin: 300px auto 100px;
+    width: 600px;
+    align-items: center;
+    gap: 30px;
+}
+
+h2 img {
+    width: 250px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.headCenter i {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.headBottom {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+
+}
+
+.headBottom a {
+    font-size: 20px;
+
+
+}
+
+.headBottom li {
+    border: 1px solid #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    width: 180px;
+}

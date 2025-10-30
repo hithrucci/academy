@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let result = number(parseInt(prompt("숫자를 입력하세요"))); //number 함수 호출, 인자는 parseInt(prompt("숫자를 입력하세요"))
+      // result에 대입, result는 return값을 받을 변수.
+
+      //   function number(num) {
+      //     //함수 생성, num매개변수를 가진 number함수.
+      //     console.log(num);
+      //     if (num % 2 == 0) {
+      //       return "짝수"; //"짝수" 인수를 가지고 함수를 호출한 곳으로 이동
+      //     } else {
+      //       return "홀수";
+      //     }
+      //   }
+      //   document.write(result);
+
+      //   function number(num) {
+      //     console.log(num);
+      //     if (num % 2 == 0) return "짝수";
+      //     else return "홀수";
+      //   }
+      //   document.write(result);
+
+      function number(num) {
+        console.log(num);
+        return num % 2 == 0 ? "짝수" : "홀수";
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>

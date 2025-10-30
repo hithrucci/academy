@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        box-sizing: border-box;
+        margin: 50px auto;
+        position: relative;
+      }
+      li {
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: #333;
+        transition: 1s;
+      }
+      .top {
+        top: 0px;
+        left: 0px;
+      }
+      .bottom {
+        bottom: 0px;
+        left: 0px;
+      }
+
+      .on .top {
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+      .on .bottom {
+        left: 0px;
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="top"></li>
+      <li class="bottom"></li>
+    </ul>
+    <script>
+      //           let clickCount = 0;
+      //   $(".btn10").on("click", function () {
+      //     clickCount++;
+
+      //     if (clickCount === 1) {
+      //       $("div").fadeTo(800, 0.2);
+      //     } else if (clickCount === 2) {
+      //       $("div").fadeTo(800, 0.5);
+      //     } else if (clickCount === 3) {
+      //       $("div").fadeTo(800, 1);
+      //       clickCount = 0;
+      //     }
+      //   });
+      let clickCount = 0;
+      $("ul").on("click", function () {
+        $("ul").toggleClass("on");
+      });
+    </script>
+  </body>
+</html>

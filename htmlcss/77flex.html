@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        border: 1px solid #f00;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .box1 {
+        background-color: orange;
+      }
+      .box2 {
+        background-color: #555;
+      }
+      .box3 {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1 box">box1</div>
+      <div class="box2 box">box2</div>
+      <div class="box3 box">box3</div>
+    </div>
+  </body>
+</html>

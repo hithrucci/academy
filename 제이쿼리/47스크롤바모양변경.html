@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .txt {
+        width: 250px;
+        height: 250px;
+        margin: 50px auto;
+        font-size: 1.2rem;
+        overflow-y: auto;
+      }
+      .txt::-webkit-scrollbar {
+        width: 5px;
+      }
+      .txt::-webkit-scrollbar-thumb {
+        background-color: blue;
+        border-radius: 10px;
+      }
+      .txt::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="txt">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, vel animi
+      ipsum ipsam laudantium error fugit eos, fuga itaque accusantium
+      perspiciatis asperiores expedita, corporis dolorum libero rerum.
+      Voluptatum, eveniet ad? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Aspernatur quos sunt laborum libero et sint soluta!
+      Consectetur repudiandae, nisi ipsam ratione dolores iusto eos facere fugit
+      velit, qui omnis beatae.
+    </div>
+  </body>
+</html>
+<!--
+-webkit-scrollbar :: 스크롤바 전체
+-webkit-scrollbar-thunmb :: 드래그 가능한 스크롤 핸들 막대
+-webkit-scrollbar-track :: 스크롤바 트랙
+
+
+-->

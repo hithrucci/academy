@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/04css_style3.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+          사업 10주년 맞이<br />
+          AI윤리 커리큘럼 강화
+        </h3>
+        <div class="bottom">
+          <div class="year">2025</div>
+          <div class="line"></div>
+        </div>
+      </li>
+      <li>
+        <img src="img/p2.jpg" />
+        <h3>
+          학교교육 통합 효과성 연구<br />
+          및 인덱스 개발
+        </h3>
+        <div class="bottom">
+          <div class="year">2023</div>
+          <div class="line"></div>
+        </div>
+      </li>
+      <li>
+        <img src="img/p3.jpg" />
+        <h3>
+          학교교육 전국 17개도 시도<br />
+          확대 운영
+        </h3>
+        <div class="bottom">
+          <div class="year">2022</div>
+          <div class="line"></div>
+        </div>
+      </li>
+      <li>
+        <img src="img/p4.jpg" />
+        <h3>
+          청소년 디지털 시민성<br />
+          척도 개발
+        </h3>
+        <div class="bottom">
+          <div class="year">2018</div>
+          <div class="line"></div>
+        </div>
+      </li>
+    </ul>
+    <script>
+      $("li").on("mouseenter", function () {
+        $("li").css({ width: "200px" });
+        $(this).css({ width: "500px" });
+        $("li").stop().find("h3").hide();
+        $(this).stop().find("h3").fadeIn();
+        $("li").find(".year").css({ color: "#eaeaea" });
+        $(this).find(".year").css({ color: "#b3b3b3" });
+        $("li").find(".line").css({ width: "0%" });
+        $(this).find(".line").css({ width: "100%" });
+        $("li").find(".line").css({ "background-color": "#b3b3b3" });
+      });
+    </script>
+  </body>
+</html>

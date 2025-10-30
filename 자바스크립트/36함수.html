@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      me();
+      function me() {
+        console.log("선언적 함수");
+      }
+
+      let name = function () {
+        console.log("익명함수");
+      };
+      name();
+
+      (function () {
+        console.log("즉시실행함수");
+      })();
+    </script>
+  </body>
+</html>
+<!--
+함수 :: 자주 실행하는 코드를 하나로 묶어 놓은 것
+동작해야 할 목적대로 여러 개의 명령을 묶어 둔 것
+
+한꺼번에 필요한 동작을 만들어 두는 것이 아니라
+필요한 동작을 한개 씩 만든 후 필요할 때 호출해서 사용할 수 있도록 하는 것이 함수
+
+함수는 재사용이 가능함
+함수는 호출을 해야 사용이 됨(선억적 함수, 익명 함수,즉시 실행 함수)
+
+함수의 종류
+1.선언적 함수 ::    함수 이름을 붙여서 정의한 것, 함수를 호출할 때는 어디서든 가능(함수보다 위에서 호출을 해도 됨)
+    -형식 ::         function 함수명(){
+                    실행문
+                    }
+
+    -호출 ::         함수명()
+                    
+
+2.익명 함수 ::      함수 이름이 없이 정의된 함수. 함수명 대신 변수에 익명함수를 대입함(반드시 함수 다음에 호출해야 함)
+    -형식 ::         let 변수 = function(){
+                    실행문
+                    }
+
+    -호출 ::         변수()
+                    
+
+3.즉시 실행 함수 :: 함수를 바로 호출해서 사용함, 재사용 안됨
+    -형식 ::         (function(){
+                    실행문
+                    })()
+
+
+
+-->

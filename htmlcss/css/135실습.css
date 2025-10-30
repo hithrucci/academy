@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.wrap {
+    background-color: #ccc;
+    width: 1200px;
+    margin: 0px auto;
+    padding: 30px;
+
+}
+
+p {
+    font-size: 10px;
+    color: #333;
+}
+
+.top {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    word-break: keep-all;
+    margin: 50px 0px 30px;
+}
+
+li {
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+
+.bg {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.left .bg {
+    background-image: url(../img/pic1.jpg)
+}
+
+.right .bg {
+    background-image: url(../img/pic2.jpg)
+}
+
+.title {
+
+    color: #fff;
+    font-size: 9px;
+    padding: 0px 5px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.left .title {
+    background-color: #00B59B;
+    width: 30%;
+
+
+}
+
+.right .title {
+    background-color: #25ABFF;
+    width: 25%;
+}
+
+ul .left {
+    background-color: #E6FCF8;
+    width: 350px;
+    border-radius: 10px;
+
+}
+
+ul .right {
+    background-color: #E5F4FF;
+    border-radius: 10px;
+    width: 490px;
+}
+
+ul h3 {
+    margin: 30px 0px 20px;
+}
+
+.bottom {
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    background-color: #1AB6BE;
+    width: 360px;
+    margin: 0px auto;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+
+.help {
+    position: relative;
+
+
+}
+
+.help div {
+    font-size: 30px;
+    color: #fff;
+    background-color: #1AB6BE;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+
+
+}

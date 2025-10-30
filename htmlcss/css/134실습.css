@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.wrap {
+    padding: 30px;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.help {
+
+    background-color: #FEDE33;
+    display: flex;
+    width: 300px;
+    height: 80px;
+    border-radius: 40px;
+    align-items: center;
+    position: relative;
+    padding: 0px 20px;
+}
+
+.help a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+span {
+    color: #aaa;
+    font-weight: normal;
+}
+
+.help img {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+li {
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+li img {
+    position: absolute;
+
+    right: 20px;
+    bottom: -5px;
+}
+
+.insurance {
+    background-color: #D8FBF7;
+}
+
+.pension {
+    background-color: #FFEBEC;
+}
+
+.health {
+    background-color: #FFF8D1;
+}
+
+.counsel {
+    background-color: #E8F1FF;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li>box1</li>
+      <li>box2</li>
+      <li>box3</li>
+      <li>box4</li>
+    </ul>
+    <div class="list">
+      <p>list1</p>
+      <p>list2</p>
+    </div>
+    <p>내용입니다.</p>
+    <script>
+      const total = $(".list p").length;
+      console.log(total);
+    </script>
+  </body>
+</html>
+<!--
+length :: 선택된 요소의 갯수를 알려줌.
+
+$("선택요소").length;   //(length 뒤에 소괄호가 없음)
+
+-->

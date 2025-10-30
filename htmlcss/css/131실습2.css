@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.wrap {
+    background-image: url(../img/avatar_hat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
+}
+
+h2 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.arr li {
+    position: absolute;
+}
+
+.con1 {
+    background-color: yellow;
+    height: 325px;
+}

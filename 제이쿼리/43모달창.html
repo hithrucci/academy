@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/43style.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, minus
+        quisquam optio a blanditiis iure similique distinctio saepe, corrupti
+        quis dolorum, hic sunt ab! Facere architecto maiores nemo. Quas,
+        ratione?
+      </div>
+      <button id="open">프로필 보기</button>
+    </div>
+    <div id="modalBox">
+      <div id="modalContent">
+        <button id="close">x</button>
+        <h2>My Profile</h2>
+        <div class="profile">
+          <img src="img/pic1.jpg" alt="" />
+          <div class="modalText">
+            <p>이름 : MBC</p>
+            <p>주소 : 화곡동</p>
+            <p>연락처 : 000-000-0000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $("#open").on("click", function () {
+        $("#modalBox").addClass("on");
+      });
+      $("#close").on("click", function () {
+        $("#modalBox").removeClass("on");
+      });
+    </script>
+  </body>
+</html>
+<!--
+모달 창은 화면에 원하는 내용이 나타나면
+다른 내용들을 블러 처리되게 하여 해당 내용만 집중할 수 있도록
+해 주는 창
+-->

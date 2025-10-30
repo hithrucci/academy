@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 500px;
+        margin: 50px auto;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      li {
+        position: relative;
+        width: calc(100% / 4 - 7.5px);
+      }
+
+      li img:nth-child(even) {
+        position: absolute;
+        left: 0px;
+        opacity: 0;
+      }
+      .top li img:nth-child(odd) {
+        transform: translateY(0px);
+      }
+      .top li img:nth-child(even) {
+        transform: translateY(50px);
+      }
+      .bottom li img:nth-child(even) {
+        transform: translateY(50px);
+      }
+      .bottom li {
+        transform: rotate(180deg);
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="top">
+      <li>
+        <img src="img/icon1.png" alt="" />
+        <img src="img/icon1_2.png" alt="" />
+      </li>
+
+      <li>
+        <img src="img/icon2.png" alt="" />
+        <img src="img/icon2_2.png" alt="" />
+      </li>
+      <li>
+        <img src="img/icon3.png" alt="" />
+        <img src="img/icon3_2.png" alt="" />
+      </li>
+      <li>
+        <img src="img/icon4.png" alt="" />
+        <img src="img/icon4_2.png" alt="" />
+      </li>
+    </ul>
+    <ul class="bottom">
+      <li>
+        <img src="img/icon1.png" alt="" />
+        <img src="img/icon1_2.png" alt="" />
+      </li>
+
+      <li>
+        <img src="img/icon2.png" alt="" />
+        <img src="img/icon2_2.png" alt="" />
+      </li>
+      <li>
+        <img src="img/icon3.png" alt="" />
+        <img src="img/icon3_2.png" alt="" />
+      </li>
+      <li>
+        <img src="img/icon4.png" alt="" />
+        <img src="img/icon4_2.png" alt="" />
+      </li>
+    </ul>
+    <script>
+      $(".top li").on("mouseenter", function () {
+        let i = $(this).index();
+        $(".top li img:nth-child(odd)")
+          .eq(i)
+          .animate(
+            { opacity: "0", transform: "translateY(50px)" },
+            500,
+            "easeOutBack"
+          );
+
+        $(".top li img:nth-child(even)").eq(i).animate(
+          {
+            opacity: "1",
+            transform: "translateY(0px)",
+          },
+          500,
+          "easeOutBack"
+        );
+
+        $(".bottom li img:nth-child(odd)")
+          .eq(i)
+          .animate(
+            { opacity: "0", transform: "translateY(50px)" },
+            500,
+            "easeOutBack"
+          );
+
+        $(".bottom li img:nth-child(even)")
+          .eq(i)
+          .animate(
+            { opacity: "1", transform: "translateY(0px)" },
+            500,
+            "easeOutBack"
+          );
+      });
+
+      $(".top li").on("mouseleave", function () {
+        $("li img:nth-child(even)").stop().animate({
+          opacity: "0",
+          transform: "translateY(50px)",
+        });
+        $("li img:nth-child(odd)")
+          .stop()
+          .animate(
+            { opacity: "1", transform: "translateY(0px)" },
+            500,
+            "easeOutBack"
+          );
+      });
+    </script>
+  </body>
+</html>

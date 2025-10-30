@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <script src="js/01custom.js"></script>
+    <style>
+      div {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div><img src="img/pic1.jpg" /></div>
+    <button class="btn1">보이기</button>
+    <button class="btn2">숨기기</button>
+    <button class="btn3">토글</button>
+    <button class="btn4">슬라이드업</button>
+    <button class="btn5">슬라이드다운</button>
+    <button class="btn6">슬라이드토글</button>
+    <button class="btn7">페이드인</button>
+    <button class="btn8">페이드아웃</button>
+    <button class="btn9">페이드투</button>
+    <button class="btn10">페이드토글</button>
+  </body>
+</html>
+<!--
+제이쿼리 형식::
+$("선택자").on("이벤트",function(){
+실행문
+})
+
+선택자 :: 태그,클래스명, 이벤트를 적용할 대상
+이벤트 :: 클릭,마우스오버,드래그,스크롤 등의 행위
+실행문 :: 선택자가 이벤트를 하면 function안의 실행문이 실행됨
+
+
+숨기기 :: 
+-hide ::
+$("").on("click",function(){
+    $("").hide(ms);
+})
+
+-slideUp ::
+$("").on("click",function(){
+    $("").slideup(ms);
+})
+
+-fadeOut ::
+$("").on("click",funciton(){
+  $("").fadeOut(ms);
+})
+
+
+보이기::
+-show::
+$("").on("이벤트",function(){
+  $("").show(ms);
+})
+
+-slideDown::
+$("").on("이벤트",function(){
+  $("").slideDown(ms);
+})
+
+
+-fadeIn::
+$("").on("이벤트",function(){
+    $("").fadeIn(ms);
+})
+
+-fadeTo::
+$("").on("이벤트",function(){
+    $("").fadeTo(ms,opacity);
+})
+
+토글::
+-toggle::
+$("").on("이벤트",function(){
+  $("").toggle(ms);
+})
+-slideToggle::
+$("").on("이벤트",function(){
+  $("").slideToggle(ms);
+})
+-fadeToggle
+$("").on("이벤트",function(){
+  $("").fadeToggle(ms);
+})
+
+
+
+-->

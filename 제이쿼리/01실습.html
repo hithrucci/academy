@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 500px;
+        border: 1px solid red;
+        text-align: right;
+      }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <img src="img/avatar_hat.jpg" />
+      <button class="close">닫기</button>
+    </div>
+  </body>
+  <script>
+    $(".close").on("click", function () {
+      $(".wrap").hide();
+    });
+  </script>
+</html>

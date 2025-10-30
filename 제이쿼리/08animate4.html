@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/08animate4.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .on {
+        filter: brightness(0.5);
+        border-radius: 20px;
+      }
+
+      .bg {
+        background-image: url(img/pic1.jpg);
+        width: 400px;
+        height: 250px;
+        background-color: #333;
+        color: #fff;
+        position: relative;
+      }
+      .bg i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bg"><i class="fa-solid fa-plus"></i></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const score = [100, 50, 60, 70];
+
+      for (i = 0; i < score.length; i++) {
+        document.write(`${score[i]}<br>`);
+      }
+
+      for (item of score) {
+        document.write(`${item}<br>`);
+      }
+
+      score.forEach(function (item) {
+        document.write(`${item}<br>`);
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+for문
+for(초기값;조건식;증감){
+실행문
+}
+
+for of문
+for(변수 of 배열){
+실행문
+}
+
+forEach문
+배열.forEach(function(변수){
+실행문
+})
+
+
+-->

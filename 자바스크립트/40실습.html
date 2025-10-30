@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const number = [1, 2, 3, 4, 5];
+      //   function sum() {
+      //     let total = 0;
+      //     for (let i = 0; i < number.length; i++) {
+      //       total += number[i];
+      //     }
+      //     return total;
+      //   }
+      //   let result = sum();
+      //   document.write(result);
+      function sum() {
+        let total = 0;
+        for (item of number) {
+          total += item;
+        }
+        return total;
+      }
+      let result = sum();
+      document.write("for of 문 <br>");
+      document.write(`${result}<br>`);
+
+      function sum2() {
+        let total = 0;
+        number.forEach(function (item) {
+          total += item;
+        });
+        return total;
+      }
+      let result2 = sum2();
+      document.write("forEach문 <br>");
+      document.write(result);
+    </script>
+  </body>
+</html>
+<!--
+반복문은 for문, for of문, forEach문이 있음.
+-->

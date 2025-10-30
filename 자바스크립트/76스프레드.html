@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const num = [1, 2, 3];
+      const str = "mbc";
+      const transport = [
+        {
+          bus: 1000,
+          walk: 2000,
+          subway: 1500,
+        },
+      ];
+      console.log(num);
+      console.log(...num);
+      console.log(str);
+      console.log(...str);
+      console.log(transport);
+      console.log(...transport);
+
+      for (let item in transport[0]) {
+        console.log(`${item}`); //key
+        console.log(transport[0][item]); //value
+      }
+    </script>
+  </body>
+</html>
+<!--
+스프레드 문법(전개구문)은 점 세개(...)을 사용하여
+배열, 문자, 객체와 같은 여러 값들의 집합을 펼쳐서 개별적인 항목으로 만드는 기능
+-->

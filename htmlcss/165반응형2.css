@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: none;
+    }
+
+    #visual {
+        width: 100%;
+        height: 400px;
+        background-image: url(../img/parallax1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px);
+    }
+
+    .con01 h2 {
+        text-align: center;
+        margin: 50px 0px;
+    }
+
+    .con01 img {
+        width: 90%;
+    }
+
+    .con01 li {
+        text-align: center;
+    }
+
+    .con01 li:nth-child(2) {
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1220px) {
+
+    /*header*/
+    header {
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    header a {
+        padding: 10px 0px;
+        display: inline-block;
+    }
+
+    #visual {
+        width: 100%;
+        height: 400px;
+        background-image: url(../img/parallax1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px);
+    }
+
+    /*container*/
+    #container {
+        width: 90%;
+        background-color: #ccc;
+        margin: 50px auto;
+    }
+
+    .con01 h2 {
+        text-align: center;
+        margin: 50px 0px;
+    }
+
+    .con01 ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .con01 li {
+        width: calc(100% / 2);
+    }
+
+    .con01 img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1220px) {
+
+    /*header*/
+    header {
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    header a {
+        padding: 10px 0px;
+        display: inline-block;
+    }
+
+    #visual {
+        width: 100%;
+        height: 400px;
+        background-image: url(../img/parallax1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px);
+    }
+
+    /*container*/
+    #container {
+        width: 1200px;
+        background-color: #ccc;
+        margin: 50px auto;
+    }
+
+    .con01 h2 {
+        text-align: center;
+        margin: 50px 0px;
+    }
+
+    .con01 ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .con01 li:nth-child(2) {
+        width: 575px;
+    }
+}

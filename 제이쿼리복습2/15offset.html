@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        margin-top: 50px;
+      }
+      .box2 {
+        width: 200px;
+        height: 100px;
+        background-color: #ccc;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+      }
+      .box3 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 200px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+  </body>
+  <script>
+    const box1 = $(".box1").offset().top;
+    console.log(box1);
+    const box1_left = $(".box1").offset().left;
+    console.log(box1_left);
+
+    const box2 = $(".box2").offset().top;
+    console.log(box2);
+    const box2_left = $(".box2").offset().left;
+    console.log(box2_left);
+
+    const box3 = $(".box3").offset().top;
+    console.log(box3);
+    const box3_left = $(".box3").offset().left;
+    console.log(box3_left);
+  </script>
+</html>
+<!--
+offset().top :: 선택자의 y축 위치를 나타냄
+body의 0,0을 기준으로 선택자 박스의 y축 거리를 알수있음
+
+offset().left :: 선택자의 x축 위치를 나타냄
+-->

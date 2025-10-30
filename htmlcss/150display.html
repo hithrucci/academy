@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /*-------------------------------------------------------------*/
+
+
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #header ul {
+            display: flex;
+            gap: 50px;
+        }
+
+        header li {
+            display: inline-block;
+            margin: 0px 30px;
+
+        }
+
+        header h1,
+        header ul {
+            display: inline-block;
+        }
+
+        .box {
+            background-color: #ccc;
+            width: 200px;
+            text-align: center;
+        }
+
+        .box a {
+            border: 1px solid #000;
+            margin-top: 50px;
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1><a href="index.html">요안도라</a></h1>
+        <ul>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">객실소개</a></li>
+            <li><a href="#">예약방법</a></li>
+            <li><a href="#">예약하기</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1><a href="index.html">요안도라</a></h1>
+        <ul>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">객실소개</a></li>
+            <li><a href="#">예약방법</a></li>
+            <li><a href="#">예약하기</a></li>
+        </ul>
+    </header>
+    <div class="box">
+        <p>내용</p>
+        <a href="#">더보기</a>
+    </div>
+</body>
+
+</html>

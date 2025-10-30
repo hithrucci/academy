@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">버튼</button>
+    <button id="btn02" onclick="message()">클릭</button>
+    <script>
+      let btn = document.querySelector("#btn");
+      //   btn.onclick = () => {
+      //     alert("클릭");
+      //   };
+      //   btn.addEventListener("click", function() {
+      //     alert("클릭");
+      //   });
+
+      btn.addEventListener("click", () => {
+        alert("클릭");
+      });
+
+      let message = () => {
+        alert("메세지입니다.");
+      };
+    </script>
+  </body>
+</html>
+<!--
+선택자.addEventListener("이벤트",function(){
+실행문
+})
+
+선택자.addEventListener("이벤트",() => {
+실행문
+})
+-->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //문제1
+      //   let num = prompt("숫자를 입력하세요");
+      //   let result =
+      //     num >= 90 ? "우수입니다" : num >= 70 ? "보통입니다" : "분발하세요";
+      //   document.write(result);
+
+      //문제2
+      //   let num = prompt("숫자를 입력하세요");
+      //   let result =
+      //     num > 0 ? "양수입니다." : num < 0 ? "음수입니다" : "0입니다.";
+      //   document.write(result);
+
+      //문제3
+      let num1 = Number(prompt("1과목의 점수를 입력하세요."));
+      let num2 = Number(prompt("2과목의 점수를 입력하세요."));
+      let num3 = Number(prompt("3과목의 점수를 입력하세요."));
+      let sum = num1 + num2 + num3;
+      let avg = sum / 3;
+
+      let result =
+        avg >= 80
+          ? `당신의 합계는 ${sum}이고, 평균은 ${avg}이며, "매우 우수"입니다.`
+          : avg >= 70
+          ? `당신의 합계는 ${sum}이고, 평균은 ${avg}이며, "우수"입니다.`
+          : avg >= 60
+          ? `당신의 합계는 ${sum}이고, 평균은 ${avg}이며, "보통"입니다.`
+          : `당신의 합계는 ${sum}이고, 평균은 ${avg}이며, "미흡"입니다.`;
+      document.write(result);
+    </script>
+  </body>
+</html>
+<!-- 
+문제1 :: 숫자를 입력받아서 90보다 크면 우수입니다.
+70보다 크면 보통입니다.
+나머지는 분발하세요
+
+문제2 :: 숫자를 입력받아서
+양수,음수, 0 구분
+
+문제3 :: 3과목의 점수를 입력받아서 총점을 구하고 평균을 구한 후
+평균이 80이상이면 매우 우수
+70이상이면 우수
+60이상이면 보통
+나머지는 미흡.
+
+결과물은 당신의 합계는 ~~이고 평균은 ~~이며, ~~입니다.
+-->

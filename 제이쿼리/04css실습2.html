@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/04css실습2.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h2>함께하는 교육과정</h2>
+      <ul class="wrap">
+        <li>
+          <a href="#">
+            <img src="img/p1.jpg" />
+            <div>아동청소년대상</div>
+            <h3>찾아가는 학교교육</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/p2.jpg" />
+            <div>교사 대상</div>
+            <h3>교사 교육 및 전문 연수</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/p1.jpg" />
+            <div>연구자료</div>
+            <h3>디지털 시민성 연구</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      $(".wrap li").on("mouseenter", function () {
+        $(this).children("a").children("img").css({
+          transform: "translateY(-10%)",
+          transition: ".3s",
+        });
+        $(this).find("img").css({ "box-shadow": "2px 2px 30px black" });
+      });
+      $(".wrap li").on("mouseleave", function () {
+        $(this).children("a").children("img").css({
+          transform: "translateY(0%)",
+          transition: ".3s",
+        });
+        $(this).children("a").children("img").css({ "box-shadow": "none" });
+      });
+    </script>
+  </body>
+</html>

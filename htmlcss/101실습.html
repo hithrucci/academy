@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더레이어footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <Style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        img {
+            width: 250px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #000;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+
+            padding: 50px;
+            height: 500px;
+
+        }
+
+
+
+        .left_info {
+            display: flex;
+            gap: 50px;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .company {
+            border-right: 1px solid #fff;
+            padding-right: 20px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 40px;
+        }
+
+        strong {
+            font-size: 20px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #777;
+            margin-right: 5px;
+        }
+
+        .value {
+            font-size: 17px;
+            color: #999;
+            margin-right: 25px;
+        }
+
+        .info_detail {
+            width: 1100px;
+            word-break: keep-all;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 17px;
+            color: #999;
+            margin-top: 20px;
+        }
+
+        .icon {
+            font-size: 30px;
+            text-align: right;
+            margin-bottom: 50px;
+        }
+
+        .icon a {
+            color: #777;
+        }
+
+        .icon a:hover {
+            color: #fff;
+        }
+
+        .family {
+            font-size: 24px;
+            color: #777;
+            border: 1px solid #777;
+            padding: 20px 40px;
+            border-radius: 40px;
+            line-height: 40px;
+            display: flex;
+            gap: 70px;
+            align-items: center;
+
+        }
+
+        .family:hover {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        .fs {
+            margin-right: 40px;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="footer">
+        <div class="left">
+
+            <h3>미술 교사의 삶, 그 빛나는 순간을 큐레이션하는 매거진</h3>
+            <div class="left_info">
+                <div>
+                    <a href="index.html"><img src="img/p1.jpg"></a>
+                </div>
+                <div>
+                    <ul>
+                        <li class="company"><a href="#">회사소개</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+
+                    <div>
+                        <strong>(주)해냄에듀 </strong><span class="title">대표이사.</span><span class="value"> 송영석</span>
+                    </div>
+                    <div class="info_detail">
+                        <span class="title">ADRESS.</span>
+                        <span class="value">서울시 마포구 잔다리로 30 해냄빌딩 3, 4층</span>
+                        <span class="title">Business Registration Number (BRN):</span>
+                        <span class="value">05-86-79354</span><br>
+                        <span class="title">TEL.</span>
+                        <span class="value">02-323-9953</span>
+                        <span class="title">Fax.</span>
+                        <span class="value">02-323-9950</span>
+                        <span class="title">OFFICE E-MAIL.</span>
+                        <span class="value">hnedu@hnedu.co.kr</span>
+                        <span class="title">THE LAYER E-MAIL.</span>
+                        <span class="value">hnedue_art@hnedu.co.kr</span>
+                        <p>COPYRIGHT@HNEDU. All Rights Reserved</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="icon">
+                <a href="#"><i class="fa-solid fa-comment"></i></a>
+            </div>
+            <div class="family">
+                <a href="#">
+                    <span class="fs">Family Sites</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

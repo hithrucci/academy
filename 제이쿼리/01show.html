@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      .box1 {
+        width: 300px;
+        height: 100px;
+        margin: 50px auto;
+        background-color: orange;
+      }
+      .btn {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+    <div class="btn">
+      <button class="hide">숨기기</button>
+      <button class="show">보이기</button>
+      <button class="to">토글</button>
+    </div>
+    <script>
+      $(".hide").on("click", function () {
+        $(".box1").hide();
+      });
+      $(".show").on("click", function () {
+        $(".box1").show();
+      });
+      $(".to").on("click", function () {
+        $(".box1").toggle();
+      });
+    </script>
+  </body>
+</html>
+<!--
+제이쿼리 형식
+$("선택자").on("click",function(){
+실행문
+})
+
+==>"선택자를 클릭하면 실행문을 실행해라"
+
+실행문
+$("선택자").hide() :: 숨김 =>선택자를 숨겨라 ==>display:none
+$("선택자").show() :: 보임 =>선택자를 보이게 해라 ==>display:block
+$("선택자").toggle :: 동작이 2개 포함(숨김,보임)
+
+
+-->

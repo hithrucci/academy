@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <style>
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      li {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #ccc;
+        cursor: pointer;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        /* transition: width 2s, background-color 4s; */
+      }
+      button {
+        padding: 5px 10px;
+      }
+      .active {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transform: translateX(100px);
+        transition: background-color 3s;
+      }
+      .on {
+        background-color: black;
+        color: #fff;
+      }
+      .on2 {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div>박스</div>
+    <button class="btn1">css</button>
+    <button class="btn2">add</button>
+    <button class="btn3">remove</button>
+    <button class="btn4">toggle</button>
+    <button class="btn5">animate</button>
+    <button class="btn6">animate콜백</button>
+    <ul>
+      <li>박스2</li>
+      <li>박스3</li>
+      <li>박스4</li>
+      <li>박스5</li>
+    </ul>
+    <script>
+      $(".btn1").on("click", function () {
+        $("div").css({
+          width: "200px",
+          height: "200px",
+          "background-color": "red",
+          transform: "translateX(100px)",
+        });
+      });
+      $(".btn2").on("click", function () {
+        $("div").addClass("active");
+      });
+      $(".btn3").on("click", function () {
+        $("div").removeClass("active");
+      });
+      $(".btn4").on("click", function () {
+        $("div").toggleClass("active");
+      });
+      $(".btn5").on("click", function () {
+        $("div").animate({
+          width: "200px",
+          height: "200px",
+          "background-color": "red",
+          transform: "translateX(100px)",
+        });
+      });
+      $(".btn6").on("click", function () {
+        $("div").animate({ width: "200px", height: "200px" }, function () {
+          $("div").animate({ "background-color": "red" }, function () {
+            $("div").animate({ transform: "translateX(100px)" });
+          });
+        });
+      });
+
+      /*------------------------*/
+      $("li").on("click", function () {
+        $("li").removeClass("fixed on on2");
+        $(this).addClass("fixed on");
+      });
+
+      $("li").on("mouseenter", function () {
+        if (!$(this).hasClass("fixed")) {
+          $(this).addClass("on");
+        }
+      });
+
+      $("li").on("mouseleave", function () {
+        if (!$(this).hasClass("fixed")) {
+          $(this).removeClass("on");
+        }
+      });
+    </script>
+  </body>
+</html>
+<!--
+
+css
+$("선택자").css({"속성":"속성값"}) :: 스타일을 변경할 때 사용, 변화과정을 볼 수 없음.(선택자 원본에 transition을 추가하면 가능)
+
+class
+복잡한 스타일 변경은 addClass,removeClass,toggleClass를 이용
+$("선택자").addClasS("클래스명")
+$("선택자").removeClasS("클래스명")
+$("선택자").toggleClasS("클래스명")
+
+animate
+$("선택자").animate({"속성":"속성값"}ms)
+속성값이 숫자가 아니면 사용할 수 없음.(jquery-ui를 이용하면 사용가능)
+animate는 콜백함수 가능. 순차적 애니메이션 가능
+-->

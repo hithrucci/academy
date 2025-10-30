@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        width: 80%;
+        margin: 50px auto;
+        border: 1px solid red;
+        padding: 30px;
+        line-height: 1.8rem;
+        cursor: none;
+      }
+
+      .txt01 {
+        background-color: aqua;
+      }
+      .txt02 {
+        background-color: tomato;
+      }
+      .txt03 {
+        background-color: gainsboro;
+      }
+      /*cursor*/
+      .cursor {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        /* transition: background-color, box-shadow 0.2s; */
+        pointer-events: none;
+        /* mix-blend-mode: multiply; */
+        animation: rot 2s alternate infinite;
+      }
+      @keyframes rot {
+        0% {
+          transform: rotateX(0deg);
+        }
+        100% {
+          transform: rotateX(180deg);
+        }
+      }
+      .cursor.on01 {
+        border: 3px solid rgba(100, 0, 255, 0.7);
+        background-color: rgba(255, 0, 0, 0);
+        box-shadow: 0 0 20px rgba(240, 0, 0, 0.5);
+      }
+      .cursor.on02 {
+        background-color: blue;
+        box-shadow: 0 0 20px rgba(240, 0, 0, 0.5);
+      }
+      .cursor.on03 {
+        background-color: red;
+        box-shadow: 0 0 20px rgba(240, 0, 0, 0.5);
+      }
+      .cursor .inner {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: rgba(100, 0, 255, 0.7);
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!--커서-->
+    <div class="cursor"><div class="inner"></div></div>
+
+    <!--본문내용-->
+    <div id="container">
+      <section class="txt01">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum,
+        eaque velit dolorum ullam dolor ipsam a animi at suscipit sit molestiae
+        debitis voluptate id fugit voluptatum blanditiis, culpa saepe.
+      </section>
+      <section class="txt02">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum,
+        eaque velit dolorum ullam dolor ipsam a animi at suscipit sit molestiae
+        debitis voluptate id fugit voluptatum blanditiis, culpa saepe.
+      </section>
+      <section class="txt03">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum,
+        eaque velit dolorum ullam dolor ipsam a animi at suscipit sit molestiae
+        debitis voluptate id fugit voluptatum blanditiis, culpa saepe.
+      </section>
+    </div>
+    <script>
+      $(document).on("mousemove", function (e) {
+        $(".cursor").css({ left: e.clientX + "px", top: e.clientY + "px" });
+      });
+
+      $("section").on("mouseleave", function () {
+        $(".cursor").removeClass("on01 on02 on03");
+      });
+      $(".txt01, .txt02, txt03").on("mousemove", function () {
+        $(".cursor").addClass("on01");
+      });
+      $(".txt02").on("mousemove", function () {
+        $(".cursor").addClass("on02");
+      });
+      $(".txt03").on("mousemove", function () {
+        $(".cursor").addClass("on03");
+      });
+    </script>
+  </body>
+</html>

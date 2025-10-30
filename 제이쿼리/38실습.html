@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      body {
+        height: 3000px;
+      }
+      div {
+        width: 200px;
+        height: 100px;
+        background-color: #ccc;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>박스</div>
+    <script>
+      $(window).on("scroll", function () {
+        let sc = $(this).scrollTop();
+        let box = $("div").offset().top;
+        // console.log(sc);
+        // console.log(box);
+        if (sc > box) {
+          $("div").css({ "background-color": "yellow" });
+        } else {
+          $("div").css({ "background-color": "#ccc" });
+        }
+      });
+    </script>
+  </body>
+</html>

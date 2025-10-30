@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: inherit;
+        color: inherit;
+      }
+      /*---------------*/
+
+      .wrap {
+        padding: 30px;
+        width: 1200px;
+        margin: 0px auto;
+        background-color: #3b8d82;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+      }
+      li {
+        height: 60px;
+        line-height: 60px;
+        width: 180px;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 24px 0px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+      li:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        border: 2px solid #fff;
+      }
+      .wrap div {
+        position: relative;
+      }
+      img {
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+        box-shadow: 2px 2px 3px #000;
+        position: absolute;
+        right: 0px;
+        top: -150px;
+      }
+      img:first-child {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul>
+        <li>스터디언</li>
+        <li>독서연구소</li>
+        <li>영어독립</li>
+        <li>건강하마</li>
+      </ul>
+      <div>
+        <img src="img/p1.jpg" />
+        <img src="img/p2.jpg" />
+        <img src="img/p3.jpg" />
+        <img src="img/p4.jpg" />
+      </div>
+    </div>
+  </body>
+  <script>
+    $("li:first-child").on("click", function () {
+      $("img").hide();
+      $("img:first-child").show();
+    });
+    $("li:nth-child(2)").on("click", function () {
+      $("img").hide();
+      $("img:nth-child(2)").show();
+    });
+    $("li:nth-child(3)").on("click", function () {
+      $("img").hide();
+      $("img:nth-child(3)").show();
+    });
+    $("li:nth-child(4)").on("click", function () {
+      $("img").hide();
+      $("img:nth-child(4)").show();
+    });
+  </script>
+</html>

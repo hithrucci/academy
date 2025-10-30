@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button>클릭</button>
+    <p>안녕</p>
+    <script>
+      //   function text() {
+      //     $("p").text("hello");
+      //   }
+      //   $("button").on("click", function () {
+      //     text();
+      //   });
+
+      function redBoldText() {
+        $("p").css({ color: "red", "font-weight": "bold" });
+        $("p").text("hello");
+      }
+      $("button").on("click", function () {
+        redBoldText();
+      });
+    </script>
+  </body>
+</html>

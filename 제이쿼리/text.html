@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      .hide {
+        background-color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hide">box1</div>
+    <div class="btn">클릭</div>
+    <script>
+      $(".btn").on("click", function () {
+        $(".hide").fadeIn();
+      });
+    </script>
+  </body>
+</html>

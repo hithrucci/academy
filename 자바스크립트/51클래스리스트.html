@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .on {
+        background-color: orange;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>스타일</div>
+    <button id="btn1">추가</button>
+    <button id="btn2">삭제</button>
+    <button id="btn3">토글</button>
+    <script>
+      let div = document.querySelector("div");
+      let btn1 = document.querySelector("#btn1");
+      let btn2 = document.querySelector("#btn2");
+      let btn3 = document.querySelector("#btn3");
+      btn1.addEventListener("click", () => {
+        div.classList.add("on");
+      });
+      btn2.addEventListener("click", () => {
+        div.classList.remove("on");
+      });
+      btn3.addEventListener("click", () => {
+        div.classList.toggle("on");
+      });
+    </script>
+  </body>
+</html>
+<!--
+classList는 클래스를 추가하거나 삭제하면서 여러가지 스타일 효과를 지정할 수 있음
+추가할 스타일은 css에 미리 만들어져 있어야 함.
+
+<형식>
+선택자.classList.add("클래스명") ==>addClass
+선택자.classList.remove("클래스명") ==>removeClass
+선택자.classList.toggle("클래스명") ==>toggleClass
+
+-->

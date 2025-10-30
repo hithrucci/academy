@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/03fade실습.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul class="left">
+        <li><img src="img/p1.jpg" /></li>
+        <li><img src="img/p2.jpg" /></li>
+        <li><img src="img/p3.jpg" /></li>
+        <li><img src="img/p4.jpg" /></li>
+        <li><img src="img/p5.jpg" /></li>
+      </ul>
+
+      <div class="right">
+        <div class="title">
+          <h2>'순환상생'의 여정'</h2>
+          <p>
+            코스모스 울르도에서 선사하는 순환상생 여정은 대자연의 순환을
+            체험하고<br />
+            부정적인 에너지를 비우며 행운과 번영으로 채워가는 경험입니다.
+          </p>
+        </div>
+
+        <ul class="fadeTxt">
+          <li>
+            <h3>1의 제목</h3>
+            <p>1의 내용</p>
+          </li>
+          <li>
+            <h3>2의 제목</h3>
+            <p>2의 내용</p>
+          </li>
+          <li>
+            <h3>3의 제목</h3>
+            <p>3의 내용</p>
+          </li>
+          <li>
+            <h3>4의 제목</h3>
+            <p>4의 내용</p>
+          </li>
+          <li>
+            <h3>5의 제목</h3>
+            <p>5의 내용</p>
+          </li>
+        </ul>
+        <ul class="fadeImg">
+          <li><img src="img/p1.jpg" /></li>
+          <li><img src="img/p2.jpg" /></li>
+          <li><img src="img/p3.jpg" /></li>
+          <li><img src="img/p4.jpg" /></li>
+          <li><img src="img/p5.jpg" /></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      $(".right .fadeImg li:first-child").on("click", function () {
+        $(".left li:nth-child(2)").hide();
+        $(".left li:nth-child(3)").hide();
+        $(".left li:nth-child(4)").hide();
+        $(".left li:nth-child(5)").hide();
+        $(".left li:first-child").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(1)").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(2)").hide();
+        $(".right .fadeTxt li:nth-child(3)").hide();
+        $(".right .fadeTxt li:nth-child(4)").hide();
+        $(".right .fadeTxt li:nth-child(5)").hide();
+        $(".right .fadeImg2 li:nth-child(1)").fadeIn(1000);
+        $(".right .fadeImg li").fadeTo(500, 0.5);
+        $(".right .fadeImg li:nth-child").fadeTo(500, 1);
+      });
+      $(".right li:nth-child(2)").on("click", function () {
+        $(".left li:nth-child(1)").hide();
+        $(".left li:nth-child(3)").hide();
+        $(".left li:nth-child(4)").hide();
+        $(".left li:nth-child(5)").hide();
+        $(".left li:nth-child(2)").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(2)").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(1)").hide();
+        $(".right .fadeTxt li:nth-child(3)").hide();
+        $(".right .fadeTxt li:nth-child(4)").hide();
+        $(".right .fadeTxt li:nth-child(5)").hide();
+      });
+      $(".right li:nth-child(3)").on("click", function () {
+        $(".left li:nth-child(1)").hide();
+        $(".left li:nth-child(2)").hide();
+        $(".left li:nth-child(4)").hide();
+        $(".left li:nth-child(5)").hide();
+        $(".left li:nth-child(3)").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(3)").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(1)").hide();
+        $(".right .fadeTxt li:nth-child(2)").hide();
+        $(".right .fadeTxt li:nth-child(4)").hide();
+        $(".right .fadeTxt li:nth-child(5)").hide();
+      });
+      $(".right li:nth-child(4)").on("click", function () {
+        $(".left li:nth-child(1)").hide();
+        $(".left li:nth-child(2)").hide();
+        $(".left li:nth-child(3)").hide();
+        $(".left li:nth-child(5)").hide();
+        $(".left li:nth-child(4)").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(4)").fadeTo(1000, 1);
+        $(".right .fadeTxt li:nth-child(1)").hide();
+        $(".right .fadeTxt li:nth-child(2)").hide();
+        $(".right .fadeTxt li:nth-child(3)").hide();
+        $(".right .fadeTxt li:nth-child(5)").hide();
+      });
+      $(".right li:nth-child(5)").on("click", function () {
+        $(".left li:nth-child(1)").hide();
+        $(".left li:nth-child(2)").hide();
+        $(".left li:nth-child(3)").hide();
+        $(".left li:nth-child(4)").hide();
+        $(".left li:nth-child(5)").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(5)").fadeIn(1000);
+        $(".right .fadeTxt li:nth-child(1)").hide();
+        $(".right .fadeTxt li:nth-child(2)").hide();
+        $(".right .fadeTxt li:nth-child(3)").hide();
+        $(".right .fadeTxt li:nth-child(4)").hide();
+      });
+    </script>
+  </body>
+</html>

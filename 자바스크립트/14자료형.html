@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = 2.65;
+      console.log(num);
+      console.log(typeof num);
+      let num2 = parseInt(2.65);
+      console.log(num2);
+      console.log(typeof num2);
+      let char = "123";
+      console.log(char);
+      console.log(typeof char);
+
+      let num3 = prompt("숫자를 입력하세요");
+      console.log(typeof num3);
+
+      let num4 = parseInt(prompt("숫자2를 입력하세요."));
+      console.log(num4);
+      console.log(typeof num4);
+
+      let num5 = parseFloat(prompt("숫자3를 입력하세요."));
+      console.log(num5);
+      console.log(typeof num5);
+
+      let num6 = Number(prompt("숫자4를 입력하세요."));
+      console.log(num6);
+      console.log(typeof num6);
+    </script>
+  </body>
+</html>
+<!--
+숫자는 타입이 number
+문자는 타입이 string
+prompt로 입력받은 숫자는 string임.
+숫자로 바꾸려면 
+
+정수형 parseInt(prompt("내용"))
+실수형 parseFloat(prompt("내용"))
+입력한 숫자 그대로 Number(prompt("내용"))
+
+-->

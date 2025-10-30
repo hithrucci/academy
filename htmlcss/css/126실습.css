@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.wrap {
+    margin: 20px auto;
+}
+
+.bg {
+    background-image: url(../img/pic2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 1000px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.bg h1 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.txt {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+p {
+    font-size: 12px;
+    margin: 10px 0px 20px;
+}
+
+.wrap a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.link {
+    border: 1px solid #333;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    margin: 0px auto;
+
+}

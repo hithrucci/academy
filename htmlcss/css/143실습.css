@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+}
+
+.wrap {
+    background-image: url(../img/pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    width: 1000px;
+    margin: 0px auto;
+    height: 400px;
+    padding: 50px;
+}
+
+.txt {
+    text-align: center;
+
+
+}
+
+
+.txt img {
+    position: absolute;
+    left: 180px;
+}
+
+.txt h2 {
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+.con img {
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 20px;
+
+}
+
+.con {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

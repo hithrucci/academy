@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .wrap {
+            border: 5px solid red;
+            width: 400px;
+
+        }
+
+        .wrap div {
+            height: 30px;
+        }
+
+        .box1 {
+            background-color: #777
+        }
+
+        .box2 {
+            background-color: #888;
+            transform: translateX(200px);
+        }
+
+        .box3 {
+            background-color: #999;
+            width: 200px;
+            transform: translate(50%, 50%)
+        }
+
+        .box4 {
+            background-color: #aaa;
+            position: absolute;
+            left: 100px;
+
+        }
+
+        .con01 {
+            background-image: url(img/pic1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 600px;
+            height: 400px;
+            position: relative;
+        }
+
+        .more {
+            background-color: #333;
+            color: #fff;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+            left: 50%;
+            /* 부모 너비값의 50%*/
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+    <div class="con01">
+        <div class="more">더보기</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.rightTop {
+    display: flex;
+    gap: 40px;
+}
+
+.rightTop a {
+    display: block;
+    font-size: 40px;
+}
+
+.left img {
+    width: 600px;
+    height: 1000px;
+    object-fit: cover;
+    box-shadow: 1px 1px 5px #333;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mask test (no assets)</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: #000;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module">
+      import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
+      import { EffectComposer } from "https://unpkg.com/three@0.160.0/examples/jsm/postprocessing/EffectComposer.js";
+      import { RenderPass } from "https://unpkg.com/three@0.160.0/examples/jsm/postprocessing/RenderPass.js";
+      import {
+        MaskPass,
+        ClearMaskPass,
+      } from "https://unpkg.com/three@0.160.0/examples/jsm/postprocessing/MaskPass.js";
+
+      // ----- 렌더러 -----
+      const renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setClearColor(0x000000, 1);
+      document.body.appendChild(renderer.domElement);
+
+      // ----- 카메라 -----
+      const camera = new THREE.PerspectiveCamera(
+        45,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        100
+      );
+      camera.position.set(0, 0, 4);
+
+      // ----- 마스크용 3D 장면 (GLB 대신 기본 도형 사용) -----
+      const maskScene = new THREE.Scene();
+      const dirLight = new THREE.DirectionalLight(0xffffff, 1);
+      dirLight.position.set(1, 2, 3);
+      maskScene.add(dirLight, new THREE.AmbientLight(0xffffff, 0.4));
+
+      const geo = new THREE.TorusKnotGeometry(0.8, 0.28, 200, 32);
+      const mat = new THREE.MeshStandardMaterial({
+        color: 0xffffff,
+        metalness: 0.1,
+        roughness: 0.4,
+      });
+      const model = new THREE.Mesh(geo, mat);
+      maskScene.add(model);
+
+      // ----- 배경 장면: 화면 가득 2D 플레인 + 코드로 만든 패턴 텍스처 -----
+      const bgScene = new THREE.Scene();
+      const orthoCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+
+      // 캔버스로 패턴 텍스처 생성 (체커보드 + 그라디언트 느낌)
+      const cnv = document.createElement("canvas");
+      cnv.width = cnv.height = 1024;
+      const ctx = cnv.getContext("2d");
+
+      // 배경 그라디언트
+      const g = ctx.createLinearGradient(0, 0, 1024, 1024);
+      g.addColorStop(0, "#0a47ff");
+      g.addColorStop(1, "#14c9ff");
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, 1024, 1024);
+
+      // 체커보드
+      const size = 64;
+      ctx.globalAlpha = 0.25;
+      for (let y = 0; y < 1024 / size; y++) {
+        for (let x = 0; x < 1024 / size; x++) {
+          if ((x + y) % 2 === 0) {
+            ctx.fillStyle = "#ffffff";
+            ctx.fillRect(x * size, y * size, size, size);
+          }
+        }
+      }
+      ctx.globalAlpha = 1;
+
+      const bgTex = new THREE.CanvasTexture(cnv);
+      bgTex.colorSpace = THREE.SRGBColorSpace;
+
+      const quad = new THREE.Mesh(
+        new THREE.PlaneGeometry(2, 2),
+        new THREE.MeshBasicMaterial({ map: bgTex })
+      );
+      bgScene.add(quad);
+
+      // ----- 컴포저(마스킹 파이프라인) -----
+      const composer = new EffectComposer(renderer);
+
+      // 1) 모델 실루엣을 마스크로 설정
+      const maskPass = new MaskPass(maskScene, camera);
+      composer.addPass(maskPass);
+
+      // 2) 마스크 내부에만 배경(패턴 텍스처) 렌더
+      const bgRenderPass = new RenderPass(bgScene, orthoCam);
+      composer.addPass(bgRenderPass);
+
+      // 3) 마스크 해제 (이후 패스 추가 시 영향을 안 받게)
+      const clearMaskPass = new ClearMaskPass();
+      composer.addPass(clearMaskPass);
+
+      // ----- 리사이즈 -----
+      window.addEventListener("resize", () => {
+        const w = window.innerWidth,
+          h = window.innerHeight;
+        renderer.setSize(w, h);
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        composer.setSize(w, h);
+      });
+
+      // ----- 애니메이션 -----
+      function animate() {
+        requestAnimationFrame(animate);
+        model.rotation.y += 0.01;
+        composer.render();
+      }
+      animate();
+    </script>
+  </body>
+</html>

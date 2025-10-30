@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let favorite = parseInt(
+        prompt(
+          `어느 계절을 좋아하시나요?(1:봄, 2:여름, 3:가을, 4:겨울)숫자로만 입력해 주세요.`
+        )
+      );
+      switch (favorite) {
+        case 1:
+          document.write("봄을 선택하셨습니다.");
+          break;
+        case 2:
+          document.write("여름을 선택하셨습니다.");
+          break;
+        case 3:
+          document.write("가을을 선택하셨습니다.");
+          break;
+        case 4:
+          document.write("겨울을 선택하셨습니다.");
+          break;
+        default:
+          document.write(
+            "잘못 입력하셨습니다.(1:봄, 2:여름, 3:가을, 4:겨울)숫자로만 입력해 주세요."
+          );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>숫자맞추기게임</h3>
+    <img src="img/main1.png" />
+    <div id="result">결과화면 : up/down/bingo</div>
+    <div id="chance">남은찬스 : 5번</div>
+    <input
+      id="user"
+      placeholder="1부터 100까지의 수"
+      onkeypress="if(event.keyCode == 13) {play()}"
+    />
+    <button id="play">시작</button>
+    <button id="reset">재시작</button>
+    <script src="custom.js"></script>
+  </body>
+</html>

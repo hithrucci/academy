@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let num = prompt("숫자를 입력하세요.");
+      //   if (num >= 10) {
+      //     result = "10이상입니다.";
+      //   } else if (num >= 5) {
+      //     result = "10미만, 5이상입니다.";
+      //   } else {
+      //     result = "5미만입니다.";
+      //   }
+      //   document.write(result);
+
+      let num = prompt("숫자를 입력하세요");
+      let result =
+        num >= 10
+          ? "10이상입니다."
+          : num >= 5
+          ? "10미만, 5이상입니다."
+          : "5미만입니다.";
+      document.write(result);
+    </script>
+  </body>
+</html>
+<!--
+다중 삼항 연산자는 조건문이 여러개.
+다중 if문과 유사
+
+조건문1 ? 값1
+: 조건문2 ? 값2 
+: 조건문3 ? 값3 : 값4
+
+
+-->

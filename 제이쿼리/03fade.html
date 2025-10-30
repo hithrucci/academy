@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      ul {
+        list-style: none;
+      }
+      /*--------------------------------*/
+      div {
+        width: 500px;
+        height: 200px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div>박스</div>
+    <button class="btn1">페이드인</button>
+    <button class="btn2">페이드아웃</button>
+    <button class="btn3">페이드토글</button>
+    <button class="btn4">페이드투</button>
+    <script>
+      $(".btn2").on("click", function () {
+        $("div").fadeOut(1000);
+      });
+      $(".btn1").on("click", function () {
+        $("div").fadeIn(1000);
+      });
+      $(".btn3").on("click", function () {
+        $("div").fadeToggle(1000);
+      });
+      $(".btn4").on("click", function () {
+        $("div").fadeTo(1000, 0.5); /*fadeTo는 사라지는게 아닌 흐림효과*/
+      });
+    </script>
+  </body>
+</html>
+<!--
+페이드는 흐림효과 :: 서서히 나오거나 서서히 사라짐. opacity
+fadeIn(속도) :: 서서히 나옴
+fadeOut(속도) :: 서서히 사라짐
+fadeToggle(속도) :: 서서히 나오거나 서서히 사라짐
+fadeTo(속도, 불투명도) :: 불투명도를 조절할 수 있음. opacity
+
+
+$("클릭선택자").on("click",function(){
+  $("페이드선택자").fadeIn();
+})
+-->

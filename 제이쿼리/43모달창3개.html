@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+      body {
+        background-color: yellow;
+      }
+      .wrap {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 10px;
+        width: 70%;
+        padding: 20px;
+      }
+      .modalBox {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+      }
+      .modal {
+        width: 550px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        height: 350px;
+      }
+      button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 10;
+        cursor: pointer;
+      }
+      .modalImg {
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 90%;
+      }
+      .modalImg li {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+      .modalImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .on {
+        display: block;
+      }
+      .modalImg li.on {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="wrap">
+      <li><img src="img/pic1.jpg" /></li>
+      <li><img src="img/pic2.jpg" /></li>
+      <li><img src="img/pic3.jpg" /></li>
+    </ul>
+    <div class="modalBox">
+      <div class="modal">
+        <button id="btn">x</button>
+        <ul class="modalImg">
+          <li><img src="img/pic1.jpg" /></li>
+          <li><img src="img/pic2.jpg" /></li>
+          <li><img src="img/pic3.jpg" /></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      $(".wrap li").on("click", function () {
+        let i = $(this).index();
+        $(".modalBox").addClass("on");
+        $(".modalImg li").eq(i).addClass("on");
+      });
+      $("#btn").on("click", function () {
+        $(".modalBox").removeClass("on");
+      });
+    </script>
+  </body>
+</html>

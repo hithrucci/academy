@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        padding:20px 0px;
+        line-height:50px;
+        
+      }
+      .blank {
+        background-color: #fff;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0px auto;
+        overflow: hidden;
+        display:inline-block;
+      }
+      ul {
+        list-style: none;
+        color: #333;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      나,
+   <div class="blank">
+        <ul>
+          <li>주종혁</li>
+          <li>추자현</li>
+          <li>이병헌</li>
+        </ul>
+      </div>
+      은/는<br>전 세계 어린이와 함께하는<br>유니세프 팀입니다.
+      
+      </div>
+    </div>
+    <script>
+      setInterval(function () {
+        $("ul")
+          .stop()
+          .animate({ "margin-top": "-50px" }, function () {
+            $("li:first-child").appendTo("ul");
+            $("ul").css({ "margin-top": "0px" });
+          });
+      }, 2000);
+    </script>
+  </body>
+</html>

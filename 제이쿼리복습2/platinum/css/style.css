@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/*------------------*/
+.headTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  align-items: center;
+}
+.gnb_title {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.headBottom {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}

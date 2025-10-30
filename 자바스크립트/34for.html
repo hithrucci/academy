@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const score = [100, 50, 60, 70];
+      document.write(`for<br>`);
+      for (i = 0; i < score.length; i++) {
+        if (score[i] >= 60) {
+          document.write(`${score[i]}<br>`);
+        }
+      }
+      document.write(`<br>`);
+      document.write(`for of<br>`);
+      for (item of score) {
+        if (item >= 60) {
+          document.write(`${item}<br>`);
+        }
+      }
+      document.write(`<br>`);
+      document.write(`forEach<br>`);
+      score.forEach(function (item) {
+        if (item >= 60) {
+          document.write(`${item}<br>`);
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+점수가 60점 이상인 값만 반복문으로 출력
+3개 다 이용
+
+-->

@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media(min-width:1220px) {
+
+    /*------header------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        align-items: center;
+        width: 1200px;
+        margin: 0px auto;
+
+    }
+
+    header h1 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    header i {
+        padding: 16px;
+        font-size: 24px;
+        display: block;
+        cursor: pointer;
+
+    }
+
+    header i:hover {
+        background-color: #ccc;
+    }
+
+    header div {
+        font-size: 24px;
+        padding-right: 5px;
+    }
+
+
+
+    /*------container------*/
+    #container {}
+
+    /*------con01------*/
+    .con01 {
+        width: 1200px;
+        padding: 50px;
+        box-sizing: border-box;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .con01 ul {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 0px auto;
+    }
+
+    .con01 li {
+        width: calc(100% / 4 - 15px);
+        margin-bottom: 40px;
+    }
+
+    .con01 li img {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .con01 li h3 {
+        font-weight: normal;
+        font-size: 22px;
+    }
+
+    .con01 li p {
+        font-size: 15px;
+    }
+
+    .con01 .page {
+        display: flex;
+        justify-content: center;
+    }
+
+    .con01 .page a {
+        display: block;
+        padding: 0px 5px;
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+
+    }
+
+    .con01 .page a:hover {
+        background-color: #222;
+        color: #fff;
+    }
+
+    /*------con02------*/
+    .con02 {
+        width: 1200px;
+        text-align: center;
+        margin: 0px auto;
+        padding: 80px 0px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .con02 h2 {
+        margin-bottom: 50px;
+        font-weight: normal;
+    }
+
+    .con02 img {
+        width: 60%;
+    }
+
+    .con02 h3 {
+        margin-top: 30px;
+    }
+
+    .con02 div {
+        margin: 20px 0px;
+        font-style: italic;
+    }
+
+    /*------footer------*/
+    footer {
+        width: 1200px;
+        margin: 80px auto;
+    }
+
+    footer h2 {
+        margin-bottom: 30px;
+        font-weight: normal;
+    }
+
+    footer .left h2 {}
+
+    footer .left p {
+        margin: 30px 0px;
+    }
+
+    footer .left .power a {
+        text-decoration: underline;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    footer>div {
+        width: calc(100% / 3 - 20px)
+    }
+
+    footer .center .top {
+        border-bottom: 1px solid #ccc;
+    }
+
+    footer .center img {
+        width: 15%;
+        display: block;
+
+    }
+
+    footer .center li {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    footer .center .txt {
+        font-size: 18px;
+
+    }
+
+    footer .center .txt h4 {
+        font-weight: normal;
+    }
+
+    footer .right span {
+        background-color: #666;
+        color: #fff;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    footer .right li {
+        margin: 20px 0px;
+    }
+}
+
+footer .right span {
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    padding: 0px 5px;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px 2px;
+    box-sizing: border-box;
+
+}
+
+footer .right .bk {
+    background-color: #000;
+}
+
+
+@media(max-width:1220px) and (min-width:720px) {
+
+    /*------header------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        align-items: center;
+        width: 90%;
+        margin: 0px auto;
+
+    }
+
+    header h1 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    header i {
+        padding: 16px;
+        font-size: 24px;
+        display: block;
+        cursor: pointer;
+
+    }
+
+    header i:hover {
+        background-color: #ccc;
+    }
+
+    header div {
+        font-size: 24px;
+        padding-right: 5px;
+    }
+
+
+
+    /*------container------*/
+    #container {}
+
+    /*------con01------*/
+    .con01 {
+        width: 90%;
+        padding: 50px;
+        box-sizing: border-box;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .con01 ul {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 0px auto;
+    }
+
+    .con01 li {
+        width: calc(100% / 4 - 15px);
+        margin-bottom: 40px;
+    }
+
+    .con01 li img {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .con01 li h3 {
+        font-weight: normal;
+        font-size: 22px;
+    }
+
+    .con01 li p {
+        font-size: 15px;
+    }
+
+    .con01 .page {
+        display: flex;
+        justify-content: center;
+    }
+
+    .con01 .page a {
+        display: block;
+        padding: 0px 5px;
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+
+    }
+
+    .con01 .page a:hover {
+        background-color: #222;
+        color: #fff;
+    }
+
+    /*------con02------*/
+    .con02 {
+        width: 90%;
+        text-align: center;
+        margin: 0px auto;
+        padding: 80px 0px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .con02 h2 {
+        margin-bottom: 50px;
+        font-weight: normal;
+    }
+
+    .con02 img {
+        width: 60%;
+    }
+
+    .con02 h3 {
+        margin-top: 30px;
+    }
+
+    .con02 div {
+        margin: 20px 0px;
+        font-style: italic;
+    }
+
+    /*------footer------*/
+    footer {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    footer h2 {
+        margin-bottom: 30px;
+        font-weight: normal;
+    }
+
+    footer .left h2 {}
+
+    footer .left p {
+        margin: 30px 0px;
+    }
+
+    footer .left .power a {
+        text-decoration: underline;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    footer>div {
+        width: calc(100% / 3 - 20px)
+    }
+
+    footer .center .top {
+        border-bottom: 1px solid #ccc;
+    }
+
+    footer .center img {
+        width: 15%;
+        display: block;
+
+    }
+
+    footer .center li {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    footer .center .txt {
+        font-size: 18px;
+
+    }
+
+    footer .center .txt h4 {
+        font-weight: normal;
+    }
+
+    footer .right span {
+        background-color: #666;
+        color: #fff;
+        padding: 5px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    footer .right li {
+        margin: 20px 0px;
+    }
+
+    footer .right .bk {
+        background-color: #000;
+    }
+}
+
+
+
+
+@media(max-width:720px) {
+
+    /*------header------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        align-items: center;
+        width: 95%;
+        margin: 0px auto;
+        position: fixed;
+        background-color: #fff;
+
+    }
+
+    header h1 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    header i {
+        padding: 16px;
+        font-size: 24px;
+        display: block;
+        cursor: pointer;
+
+    }
+
+    header i:hover {
+        background-color: #ccc;
+    }
+
+    header div {
+        font-size: 24px;
+        padding-right: 5px;
+    }
+
+
+
+    /*------container------*/
+    #container {
+        padding-top: 80px;
+    }
+
+    /*------con01------*/
+    .con01 {
+        width: 96%;
+        padding: 30px;
+        box-sizing: border-box;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .con01 ul {}
+
+    .con01 li {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .con01 li img {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .con01 li h3 {
+        font-weight: normal;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .con01 li p {
+        font-size: 15px;
+    }
+
+    .con01 .page {
+        display: flex;
+        justify-content: center;
+    }
+
+    .con01 .page a {
+        display: block;
+        padding: 0px 5px;
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+
+    }
+
+    .con01 .page a:hover {
+        background-color: #222;
+        color: #fff;
+    }
+
+    /*------con02------*/
+    .con02 {
+        width: 90%;
+        text-align: center;
+        margin: 0px auto;
+        padding: 80px 0px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .con02 h2 {
+        margin-bottom: 50px;
+        font-weight: normal;
+    }
+
+    .con02 img {
+        width: 60%;
+    }
+
+    .con02 h3 {
+        margin-top: 30px;
+    }
+
+    .con02 div {
+        margin: 20px 0px;
+        font-style: italic;
+    }
+
+    /*------footer------*/
+    footer {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    footer h2 {
+        margin-bottom: 30px;
+        font-weight: normal;
+    }
+
+    footer .left h2 {}
+
+    footer .left p {
+        margin: 30px 0px;
+    }
+
+    footer .left .power a {
+        text-decoration: underline;
+    }
+
+    footer {}
+
+    footer>div {
+        width: 100%;
+    }
+
+    footer .center .top {
+        border-bottom: 1px solid #ccc;
+    }
+
+    footer .center img {
+        width: 15%;
+        display: block;
+
+    }
+
+    footer .center li {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    footer .center .txt {
+        font-size: 18px;
+
+    }
+
+    footer .center .txt h4 {
+        font-weight: normal;
+    }
+
+    footer .right span {
+        display: inline-block;
+        background-color: #666;
+        color: #fff;
+        padding: 0px 5px;
+        font-size: 12px;
+        line-height: 20px;
+        margin: 5px 2px;
+        box-sizing: border-box;
+
+    }
+
+
+
+
+    footer .right .bk {
+        background-color: #000;
+        padding: 2px 8px;
+    }
+}

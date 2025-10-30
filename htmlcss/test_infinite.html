@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #slider {
+            overflow: hidden;
+            position: relative;
+            border: 20px solid red;
+            width: 1440px; // 이미지 보여지는 뷰 부분
+            height: 200px;
+        }
+
+        .image-box {
+            width: 5280px; // 원본+클론의 총 합
+            height: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            animation: bannermove 5s linear infinite;
+        }
+
+        @keyframes bannermove {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-50%, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slider">
+        <div class="image-box">
+            <div><img src="https://unsplash.it/330/200/?random" /></div>
+            <div><img src="https://unsplash.it/330/200/?random" /></div>
+            <div><img src="https://unsplash.it/330/200/?random" /></div>
+            <div><img src="https://unsplash.it/330/200/?random" /></div>
+            <div><img src="https://unsplash.it/330/200/?random" /></div>
+            <div><img src="https://unsplash.it/330/200/?random" /></div>
+            <div><img src="https://unsplash.it/330/200/?random" /></div>
+            <div><img src="https://unsplash.it/330/200/?random" /></div>
+            <!--   clone     -->
+            <div class="clone"><img src="https://unsplash.it/330/200/?random" /></div>
+            <div class="clone"><img src="https://unsplash.it/330/200/?random" /></div>
+            <div class="clone"><img src="https://unsplash.it/330/200/?random" /></div>
+            <div class="clone"><img src="https://unsplash.it/330/200/?random" /></div>
+            <div class="clone"><img src="https://unsplash.it/330/200/?random" /></div>
+            <div class="clone"><img src="https://unsplash.it/330/200/?random" /></div>
+            <div class="clone"><img src="https://unsplash.it/330/200/?random" /></div>
+            <div class="clone"><img src="https://unsplash.it/330/200/?random" /></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/03실습_2.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="left">
+        <h2>베스트</h2>
+        <ul>
+          <li>국내도서</li>
+          <li>외국도서</li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul class="right_1">
+          <li>
+            <img src="img/p1.jpg" />
+            <div class="num">
+              <div class="num_left_1">
+                <i class="fa-solid fa-crown"></i>교보문고 Best 1
+              </div>
+              <div class="num_right_1">-</div>
+            </div>
+            <h3>호의에 대하여</h3>
+          </li>
+          <li>
+            <img src="img/p2.jpg" />
+            <div class="num">
+              <div class="num_left">2</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>다시 시작하는 평생 독서법</h3>
+          </li>
+          <li>
+            <img src="img/p3.jpg" />
+            <div class="num">
+              <div class="num_left">3</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>세상은 실제로 어떻게 돌아가는가</h3>
+          </li>
+          <li>
+            <img src="img/p4.jpg" />
+            <div class="num">
+              <div class="num_left">4</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>다크 심리학</h3>
+          </li>
+          <li>
+            <img src="img/p5.jpg" />
+            <div class="num">
+              <div class="num_left">5</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>팩트풀니스(50만 부 뉴에디션)</h3>
+          </li>
+          <li>
+            <img src="img/p6.jpg" />
+            <div class="num">
+              <div class="num_left">6</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>우리 본성의 선한 천사</h3>
+          </li>
+          <li>
+            <img src="img/p7.jpg" />
+            <div class="num">
+              <div class="num_left">7</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>오늘도 잘 놀다 갑니다</h3>
+          </li>
+          <li>
+            <img src="img/p8.jpg" />
+            <div class="num">
+              <div class="num_left">8</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>혼모노</h3>
+          </li>
+        </ul>
+        <ul class="right_2">
+          <li>
+            <img src="img/pic1.jpg" />
+            <div class="num">
+              <div class="num_left_1">
+                <i class="fa-solid fa-crown"></i>교보문고 Best 1
+              </div>
+              <div class="num_right_1">-</div>
+            </div>
+            <h3>配色事典 大正.昭和の色彩ノ―ト</h3>
+          </li>
+          <li>
+            <img src="img/pic2.jpg" />
+            <div class="num">
+              <div class="num_left">2</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>How to Steal a Dog</h3>
+          </li>
+          <li>
+            <img src="img/pic3.jpg" />
+            <div class="num">
+              <div class="num_left">3</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>Factfulness</h3>
+          </li>
+          <li>
+            <img src="img/pic4.jpg" />
+            <div class="num">
+              <div class="num_left">4</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>The Let Them Theory</h3>
+          </li>
+          <li>
+            <img src="img/parallax1.jpg" />
+            <div class="num">
+              <div class="num_left">5</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>Wonder</h3>
+          </li>
+          <li>
+            <img src="img/parallax2.jpg" />
+            <div class="num">
+              <div class="num_left">6</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>Trump: The Art of the Deal</h3>
+          </li>
+          <li>
+            <img src="img/parallax3.jpg" />
+            <div class="num">
+              <div class="num_left">7</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>Holes (1999 Newbery Winner)</h3>
+          </li>
+          <li>
+            <img src="img/scent.jpg" />
+            <div class="num">
+              <div class="num_left">8</div>
+              <div class="num_right">NEW</div>
+            </div>
+            <h3>Atomic Habits</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      $(".left ul li:nth-child(1)").on("click", function () {
+        $(".right_1").stop().fadeIn();
+        $(".right_2").fadeOut();
+        $(this).css("color", "blue");
+        $(".left ul li:nth-child(2)").css("color", "inherit");
+      });
+      $(".left ul li:nth-child(2)").on("click", function () {
+        $(this).css("color", "blue");
+        $(".left ul li:nth-child(1)").css("color", "inherit");
+        $(".right_1").fadeOut();
+        $(".right_2 li").fadeIn();
+      });
+    </script>
+  </body>
+</html>

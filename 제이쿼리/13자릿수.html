@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+    </ul>
+    <script>
+      $("li").on("click", function () {
+        // $("li").eq(4).css({ color: "red" });
+        let i = $(this).index();
+        console.log(i);
+      });
+    </script>
+  </body>
+</html>
+<!--
+
+제이쿼리는 자릿수가 0부터 시작 ==> ex) $("li").eq(0)
+css는 자릿수가 1부터 시작 ==> ex) li:nth-child(1)
+li가 많은 경우 자릿수 파악을 위해 index()를 이용
+해당 자릿수를 파악하려면 변수에 담고 ==> i = $(this).index();
+ console.log로 확인
+
+-->

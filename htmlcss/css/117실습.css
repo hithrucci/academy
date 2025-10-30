@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.header {
+    color: #fff;
+    background-image: url(../img/img_manarola.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.headTop {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 30px;
+    padding: 30px 100px;
+    align-items: center;
+
+}
+
+.headTop ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.headTop i {
+    margin-right: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: mediumaquamarine;
+    font-weight: bold;
+}
+
+.headCenter {
+    padding-top: 200px;
+}
+
+.headCenter {
+    text-align: center;
+    width: 900px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+
+.headCenter h3 {
+    font-size: 55px;
+}
+
+.headCenter p {
+    color: #ddd;
+    margin-top: 40px;
+
+}

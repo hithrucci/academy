@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/06animate2_style.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button>버튼1</button>
+    <div class="wrap">
+      <div class="top">
+        <h2>REFRESH SPRING</h2>
+      </div>
+      <div class="center">
+        <p>IFC Mall에서 봄을 즐기세요</p>
+      </div>
+      <div class="bottom">
+        <div><a href="#">더보기</a></div>
+      </div>
+    </div>
+    <script>
+      $("button").on("click", function () {
+        $(".top").find("h2").animate({ bottom: "0px" }, 600);
+        $(".center").find("p").delay(400).animate({ bottom: "0px" });
+        $(".bottom").find("div").delay(800).animate({ bottom: "0px" });
+      });
+    </script>
+  </body>
+</html>

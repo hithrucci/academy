@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = prompt("숫자를 입력하세요");
+
+      for (let i = 1; i <= 3333; i++) {
+        result = "";
+        for (let j = 0; j < str.length; j++) {
+          if (str[j] == "3" || str[j] == "6" || str[j] == "9") {
+            result += "👏";
+          } else {
+            result = "0개";
+          }
+        }
+      }
+      document.write(
+        `입력한 숫자는 ${str}이며,<br>3,6,9 개수는 ${result}입니다.`
+      );
+    </script>
+    <!-- <script>
+      let str = prompt("숫자를 입력해주세요");
+    //   console.log(typeof str);
+    //   console.log(str.length);
+
+      let result = "";
+      let total = 0;
+      for (let i = 0; i < str.length; i++) {
+        if (str[i] == "3" || str[i] == "6" || str[i] == "9") {
+          total += 1;
+          result += "👏"; // result = result + "👏"
+        }
+      }
+
+      if (total == 0) {
+        document.write(
+          `입력한 숫자는 ${str}이며 3,6,9 개수는 ${total} 입니다  <br>`
+        );
+      } else {
+        document.write(
+          `입력한 숫자는 ${str}이며 3,6,9 개수는 ${result} 입니다  <br>`
+        );
+      }
+    </script> -->
+  </body>
+</html>
+<!--
+원하는 숫자를 prompt로 입력받아서(1~100)
+결과는
+입력한 숫자는 ~~이며, 3,6,9 개수는 x개입니다.(박수이모지)
+-->

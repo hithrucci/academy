@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = 10;
+      let result;
+
+      result = num++; //1.대입, result=num==10    2.++계산, num=num+1==11
+      document.write(`num의 값은 ${num}이고,result의 값은 ${result}이다<br>`);
+
+      result = ++num; //1.++계산, num=num+1==12     2.대입, result=num==12
+      document.write(`num의 값은 ${num}이고,result의 값은 ${result}이다<br>`);
+
+      result = num--; //1.대입, result=num==12    2.--계산, num=num-1==11
+      document.write(`num의 값은 ${num}이고,result의 값은 ${result}이다<br>`);
+
+      result = --num; //1.--계산, num=num-1==10     2.대입, result=num==10
+      document.write(`num의 값은 ${num}이고,result의 값은 ${result}이다<br>`);
+    </script>
+  </body>
+</html>

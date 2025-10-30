@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="user" placeholder="글자를 입력" />
+    <button id="btn">클릭</button>
+    <script>
+      let user = document.querySelector("#user");
+      let btn = document.querySelector("#btn");
+
+      btn.addEventListener("click", () => {
+        let message = user.value; //user에 들어간 값을 message에 대입
+        console.log(message);
+        if (message == "") {
+          alert("글자를 입력해 주세요.");
+        } else {
+          alert(`${message}를 입력하셨습니다.`);
+        }
+      });
+      user.addEventListener("focus", () => {
+        user.value = "";
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+<script>를 이용해서 이벤트를 작성할 때는 addEventListener를 이용,
+html에서 이벤트를 작성할 때는 onclick,onfocus등을 이용함.
+-->

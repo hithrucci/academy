@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100px;
+}
+
+.header {
+    background-image: url(../img/pic4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap {
+    color: #fff;
+    padding: 50px;
+}
+
+.headTop {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.headTop .menu {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.headTop .icon {
+    display: flex;
+    gap: 40px;
+}
+
+.icon {
+    align-items: center;
+}
+
+.icon .glob {
+    border: 1px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.icon .contact {
+    border: 1px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.contact i {
+    color: #ddd;
+}
+
+
+.icon span {
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 100px 0px;
+}
+
+.headBottom {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.headBottom ul {
+    display: flex;
+    gap: 70px;
+}
+
+.headBottom strong {
+    font-size: 40px;
+}
+
+.headBottom .box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 0px 30px;
+}
+
+.headBottom div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box .gray {
+    color: #ccc;
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+
+}
+
+.digit {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}

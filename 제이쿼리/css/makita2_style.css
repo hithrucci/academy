@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/**/
+/*---------------*/
+body {
+  background-color: black;
+}
+.wrap {
+  padding: 50px 0px;
+  width: 1200px;
+  margin: 0px auto;
+}
+.title {
+  color: #fff;
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.title h2 {
+  font-size: 50px;
+}
+.title i {
+  font-weight: normal;
+}
+.center {
+  color: #fff;
+  display: flex;
+  gap: 150px;
+  width: 100%;
+  margin: 0px auto;
+}
+.center_left {
+  width: 36%;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  height: 512px;
+  font-weight: bold;
+  overflow: hidden;
+  width: 100%;
+}
+.product li {
+  height: 44px;
+  line-height: 44px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #777;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+}
+.off {
+  background-color: black;
+  color: #777;
+}
+.on {
+  color: #fff;
+  background-color: #002428;
+}
+.product li i {
+  position: absolute;
+  right: 30px;
+  color: cyan;
+  font-size: 15px;
+  opacity: 0;
+}
+.product li:nth-child(1) {
+  background-color: #002428;
+  color: #fff;
+}
+.product li:nth-child(1) i {
+  right: 10px;
+  opacity: 1;
+}
+.product li span {
+  color: #d6222f;
+  margin-left: 10px;
+}
+.up_down {
+  width: 200px;
+  margin: 40px auto;
+  display: flex;
+  gap: 20px;
+}
+.up_down li {
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*----center_right------*/
+.center_right {
+  width: 65%;
+  height: 100%;
+}
+.center_right .model {
+  color: #008290;
+  font-weight: bold;
+  font-size: 20px;
+}
+.center_right h3 {
+  font-size: 44px;
+}
+.center_right span {
+  color: #d6222f;
+  font-size: 24px;
+  font-weight: bold;
+}
+.center_right .product_detail {
+  position: relative;
+  width: 100%;
+}
+.center_right .product_detail .wrap {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+.center_right .product_detail .wrap:first-child {
+  opacity: 1;
+}
+.center_right img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.center_right .detail_txt {
+  margin-top: 30px;
+}
+.center_right .detail_txt ul {
+  margin: 30px 0px 0px 16px;
+  list-style: disc;
+}

@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+}
+
+.box1 {
+    background-color: red;
+    position: relative;
+    left: -200px;
+    top: -50px;
+}
+
+.box2 {
+    background-color: green;
+    position: relative;
+    left: 50px;
+    top: -100px;
+}
+
+
+.box3 {
+    background-color: blue;
+    position: relative;
+    right: 400px;
+    bottom: 250px;
+
+}
+
+.box4 {
+    background-color: yellow;
+    position: relative;
+    right: -50px;
+    bottom: 200px;
+
+}
+
+.box5 {
+    background-color: #ccc;
+    position: relative;
+    left: -200px;
+    top: -250px;
+
+}

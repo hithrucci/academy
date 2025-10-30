@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/05custom.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+      }
+      /*-----*/
+      .menu {
+        padding: 0px 10px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        font-size: 20px;
+      }
+      .menu li span {
+        border-bottom: 2px solid black;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .lang {
+        background-color: #eee;
+        width: 44px;
+        padding: 10px 0px;
+        display: none;
+        cursor: pointer;
+      }
+      .lang li:first-child {
+        color: blue;
+        background-color: #ccc;
+      }
+      .active {
+        color: blue;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li>
+        <span>KR</span>
+        <ul class="lang">
+          <li>KR</li>
+          <li>EN</li>
+        </ul>
+      </li>
+      <li><i class="fa-solid fa-globe"></i></li>
+      <li><i class="fa-solid fa-magnifying-glass"></i></li>
+    </ul>
+  </body>
+</html>

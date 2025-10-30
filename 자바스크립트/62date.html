@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        border-radius: 50%;
+        border: 5px solid red;
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <script>
+      let day = new Date();
+      console.log(day);
+
+      let year = day.getFullYear();
+      let month = day.getMonth();
+      let days = day.getDate();
+      let week = day.getDay();
+      let hour = day.getHours();
+      let minutes = day.getMinutes();
+
+      switch (week) {
+        case 4:
+          week = "목";
+          break;
+      }
+      switch (month) {
+        default:
+          month += 1;
+          if ((month = 12)) {
+            month = 1;
+          }
+      }
+
+      console.log(`${day.getSeconds()}초`);
+      console.log(`${day.getMilliseconds()}ms`);
+      //   document.write(`현재시간은 ${hour}시 ${minutes}분 입니다<br>`);
+      //   document.write(
+      //     `오늘날짜는 ${year}년 ${month}월 ${days}일 ${week}요일입니다.`
+      //   );
+      let div = document.querySelector("div");
+      div.textContent = `${hour}`;
+    </script>
+  </body>
+</html>
+<!--
+내장함수 :: 자바스크립트 안에 내장된 함수, 그 함수 안에서 사용하는 것을 메소드라고 함
+외장함수 :: 필요에 의해 직접 만든 함수
+
+날짜와 관련된 메소드
+Date를 활용하면 시간 및 날짜를 출력할 수 있음
+
+new Date() :: 현재 날짜와 시간이 저장
+getFullYear() :: 년도 값을 가지고 옴
+getMonth() ::월값을 가지고 옴(0~11의 숫자로 반환, 0:1월, 1:2월 , ...)
+getDate() :: 일값을 가지고 옴, 1~31의 숫자로 반환
+getDay() :: 요일값을 가지고 옴, 0~6사이의 숫자(0:일요일, ...)
+
+getHours() :: 현재 시를 반환
+getMinutes() :: 현재 분을 반환
+getSeconds() :: 현재 초를 반환
+getMilliseconds() :: 현재 밀리초를 반환
+-->

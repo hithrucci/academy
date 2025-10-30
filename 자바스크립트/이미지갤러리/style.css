@@ -1,0 +1,56 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+/*large*/
+.large {
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.large li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+
+.large li:first-child {
+  display: block;
+}
+
+.large li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*small*/
+.small {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.small li {
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+}
+.small li.on {
+  border: 2px solid red;
+}
+
+.small li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

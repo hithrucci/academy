@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function
+        // let count =1;
+        // let time = setInterval(function(){
+        //     document.write(`안녕하세요<br>`)
+        //     count++;
+        //       if(count>5){
+        //     clearInterval(time)
+        // }
+        // },1000)
+      
+   
+
+         //화살표함수   
+        // let count=1;
+        // let time = setInterval(()=>{
+        //     document.write(`안녕하세요<br>`)
+        //     count++;
+        //     if(count>5){
+        //         clearInterval(time);
+        //     }
+        // },1000)
+
+//         //함수에 넣기
+//    let count =1;
+//    function time(){
+//     document.write(`안녕하세요<br>`);
+//     count++;
+//     if(count>5)
+// {
+//     clearInterval(stop);
+// }   }
+// let stop = setInterval(time,1000)
+
+        // //화살표함수에 넣기, 최근 자주 사용
+    let count =1 ;
+    time = ()=>{document.write(`안녕하세요<br>`)
+    count++;
+    if(count>5){
+        clearInterval(stop);
+    }
+}
+    let stop =setInterval(time,1000)
+
+
+    </script>
+</body>
+</html>
+
+<!--
+setInterval함수를 멈추게 하는 clearInterval
+
+setInterval을 변수에 넣고
+clearInterval(변수)
+
+let time = setInterval(()=>{
+실행문
+})
+clearInterval(time)
+
+만약 time이 여러 곳에 사용이 된다면 let은 생략.전역변수로 해야함
+
+문제1 :: 1초마다 안녕하세요를 출력, 5초가 지나면 멈추게
+-->

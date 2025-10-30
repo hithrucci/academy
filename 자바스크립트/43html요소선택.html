@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+    </ul>
+    <p>내용</p>
+    <script>
+      //   let li = document.getElementsByTagName("li");
+      //   console.log(li);
+      //   li.style.color = "red";
+
+      //   let p = document.getElementsByTagName("p");
+      //   console.log(p);
+      //   p.style.color = "red";
+
+      let list = document.querySelectorAll("li");
+
+      //   for (let i = 0; i < list.length; i++) {
+      //     list[i].style.backgroundColor = "yellow";
+      //   }
+
+      for (item of list) {
+        item.style.fontSize = "20px";
+      }
+      list.forEach(function (item) {
+        item.style.listStyle = "none";
+      });
+      list.forEach((item) => {
+        item.style.color = "red";
+      });
+    </script>
+  </body>
+</html>

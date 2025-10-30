@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/*------header------*/
+body {
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    line-height: 45px;
+
+    box-shadow: 1px 1px 3px #333;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+
+
+}
+
+header>div {
+    position: fixed;
+    right: 0px;
+    padding: 0px 20px;
+    display: block;
+
+    box-sizing: border-box;
+
+
+}
+
+header>div a {
+    display: block;
+}
+
+header>div:hover {
+    background-color: red;
+}
+
+header ul {
+    display: flex;
+
+
+}
+
+header li {
+    cursor: pointer;
+    padding: 0px 45px;
+
+}
+
+header li:hover {
+    background-color: #aaa;
+    color: black;
+}
+
+/*------visual------*/
+#visual {
+    background-image: url(../img/newyork.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: #fff;
+    position: relative;
+
+}
+
+#visual .txt {
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.txt h2 {
+    margin-bottom: 20px;
+}
+
+/*------container------*/
+#container {}
+
+.con01 {
+    width: 900px;
+    margin: 80px auto;
+}
+
+.con01 img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.con01 .txt {
+    margin-bottom: 60px;
+}
+
+.con01 h2,
+.con01 div {
+    text-align: center;
+}
+
+.con01 div {
+    margin: 20px 0px;
+}
+
+.con01 ul {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.con01 ul h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/*------con02------*/
+.con02 {
+
+    background-color: #000;
+    padding-bottom: 50px;
+}
+
+.con02 .txt {
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    width: 900px;
+    margin: 0px auto;
+}
+
+.con02 .txt h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.con02 .txt p {
+    font-style: italic;
+    color: #aaa;
+    margin: 30px 0px;
+}
+
+.con02 .month {
+    background-color: #fff;
+    width: 900px;
+    margin: 0px auto;
+}
+
+.month>div {
+    border-bottom: 1px solid #ccc;
+}
+
+.sep,
+.oct,
+.nov {
+    display: flex;
+    line-height: 50px;
+    padding: 0px 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.month .bgRed {
+    background-color: red;
+    color: #fff;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 10px;
+}
+
+.nov {
+    justify-content: space-between;
+}
+
+.bgBlack {
+    color: #fff;
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.con02 img {
+    width: 100px;
+    display: block;
+}
+
+.con02 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 50px auto;
+
+
+}
+
+.con02 li {
+    width: calc(100% / 3 - 20px);
+}
+
+.con02 li img {
+    width: 100%;
+}
+
+.con02 .box {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.buy {
+    background-color: #000;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.buy:hover {
+    background-color: #ccc;
+}
+
+.buy a:hover {
+    color: #000;
+}
+
+.buy a {
+    color: #fff;
+    display: block;
+}
+
+.box>div {
+    margin: 20px 0px;
+    color: #888;
+}
+
+/*------con03------*/
+.con03 {
+    background-color: #fff;
+    color: #000;
+
+    width: 900px;
+    margin: 0px auto;
+}
+
+.con03 h3 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 50px;
+    letter-spacing: 4px;
+}
+
+.con03 h3,
+.con03>p {
+    text-align: center;
+
+}
+
+.con03>p {
+    margin: 30px 0px 50px;
+    color: #777;
+    font-style: italic;
+}
+
+.footCenter {
+    width: 900px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .loc,
+.box .phone,
+.box .mail {
+    display: flex;
+    gap: 10px;
+    color: #333;
+    margin: 5px 0px;
+}
+
+.insert {
+    text-align: left;
+    position: relative;
+}
+
+.insert .line {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.line .name,
+.line .mail,
+.msg {
+    border: 1px solid #ccc;
+    color: #777;
+}
+
+.line .name,
+.line .mail {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.msg {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.send {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: -60px;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+    right: 0px;
+}
+
+.send:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.send a {
+    display: block;
+}
+
+.footerBg {
+    margin-top: 200px;
+    background-image: url(../img/map.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+
+footer {
+    color: #777;
+    padding-bottom: 100px;
+}
+
+
+
+.icons {
+    text-align: center;
+    font-size: 20px;
+    margin: 50px 0px 30px;
+    letter-spacing: -10px;
+
+}
+
+.icons i:hover {
+    color: #ccc
+}
+
+
+.power {
+    text-align: center;
+}
+
+.power a {
+    text-decoration: underline;
+}

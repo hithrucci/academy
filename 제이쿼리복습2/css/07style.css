@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/*--------------*/
+.inquiry {
+  background-color: #dd1a32;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 40px 40px 0px 0px;
+  height: 90px;
+}
+.up {
+  height: 350px;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.inquiry .title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+
+/*----wrap----*/
+.inquiry .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 55px;
+  padding: 30px;
+}
+.inquiry .wrap > h3 {
+  font-size: 50px;
+  width: 100px;
+}
+.inputTop {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.inputTop h4 {
+  font-size: 24px;
+}
+ul.select {
+  display: flex;
+  gap: 14px;
+  font-size: 20px;
+}
+.info {
+  color: #444;
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+}
+.infoLeft {
+  width: 500px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.infoLeft > div {
+  background-color: #fff;
+  width: calc(100% / 2 - 7px);
+  height: 60px;
+  line-height: 60px;
+  border-radius: 5px;
+}
+.infoLeft > div:last-child {
+  width: 100%;
+}
+.infoRight {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+}
+/*----code----*/
+.bar {
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 28px;
+}
+.code > h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.code a {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.bar .current {
+  width: 50%;
+  height: 100%;
+  line-height: 40px;
+  background-color: #333;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.codewrap {
+  display: flex;
+}
+.go {
+  cursor: pointer;
+  background-color: #333;
+  height: 150px;
+  line-height: 150px;
+  margin-top: 38px;
+  width: 160px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}

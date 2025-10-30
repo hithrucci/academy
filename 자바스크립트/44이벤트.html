@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="user" placeholder="글자를 입력해 주세요" />
+    <button id="btn">클릭</button>
+    <script>
+      let user = document.querySelector("#user");
+      let btn = document.querySelector("#btn");
+      btn.onclick = () => {
+        alert("클릭");
+      };
+      user.onclick = () => {
+        user.style.border = "1px solid red";
+      };
+      user.onfocus = () => {
+        console.log(user.value);
+        user.value = ""; //기존 입력내용을 지움
+      };
+    </script>
+  </body>
+</html>
+<!--
+이벤트 :: 사용자가 클릭,스크롤,입력했을때 일어나는 사건
+
+마우스 이벤트 :: click,mouseenter(mouseover),mouseleave(mouseout)
+폼이벤트 :: submit
+포커스이벤트 :: focus (input태그를 마우스로 클릭하여 입력상태로 만든 것을 포커스를 얻었다라고 함, 입력상태를 벗어나면 포커스가 벗어남)
+
+선택자.onclick = function(){
+실행문
+}
+선택자.onclick = () => {
+실행문
+}
+-->

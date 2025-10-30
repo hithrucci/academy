@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      ul {
+        list-style: none;
+      }
+      /*----------*/
+
+      /*h1*/
+      h1 {
+        padding: 30px 10px;
+        box-sizing: border-box;
+      }
+      /*menu*/
+      .menu {
+        margin-left: 10px;
+        width: 250px;
+        height: 100vh;
+        padding: 15px;
+        box-sizing: border-box;
+        color: rgb(2, 7, 21);
+        position: relative;
+      }
+      .menu::before {
+        content: "";
+        position: absolute;
+        width: 110%;
+        height: 3.5px;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: black;
+      }
+      .menu::after {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        content: "";
+        background-color: black;
+        height: 101%;
+        width: 2px;
+      }
+      .menu li {
+        margin: 24px 0px;
+      }
+      h2 {
+        cursor: pointer;
+        font-size: 34px;
+        position: relative;
+        margin: 25px 0px;
+      }
+      /* 
+      h2.on::after {
+        content: "";
+        height: 2px;
+        width: 90%;
+        background-color: #000;
+        position: absolute;
+        bottom: -5px;
+        left: 5px;
+      } */
+
+      /*list*/
+      .list {
+        display: none;
+        font-size: 18px;
+      }
+
+      .list.on {
+        display: block;
+        /* background-color: aliceblue; */
+      }
+      .list li {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>아코디언 메뉴</h1>
+    <ul class="menu">
+      <li>
+        <h2 class="on">Top</h2>
+        <ul class="list on">
+          <li><a href="#">티셔츠</a></li>
+          <li><a href="#">니트</a></li>
+          <li><a href="#">맨투맨</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2>Bottom</h2>
+        <ul class="list">
+          <li><a href="#">데님</a></li>
+          <li><a href="#">슬랙스</a></li>
+          <li><a href="#">트레이닝</a></li>
+          <li><a href="#">반바지</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2>Outer</h2>
+        <ul class="list">
+          <li><a href="#">코트</a></li>
+          <li><a href="#">가디건</a></li>
+          <li><a href="#">후드</a></li>
+        </ul>
+      </li>
+    </ul>
+    <script>
+      $("h2").on("click", function () {
+        $(".list").removeClass("on");
+        $(this).closest("li").find(".list").addClass("on");
+        4;
+
+        // $(".list").slideUp(200);
+        // $(this).siblings(".list").slideDown(200);
+        // $(this).sibling(".list").animate({ "background-color": "#ccc" });
+      });
+    </script>
+  </body>
+</html>

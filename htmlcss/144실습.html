@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'RixYeoljeongdo_Regular';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        body {
+            /* font-family: "Bitcount Single", system-ui; */
+            height: 3000px;
+        }
+
+        #wrap {
+            /* background-color: #ccc; */
+        }
+
+
+        ul p {
+            color: red;
+        }
+
+        #wrap>p {
+            border: 20px solid #333;
+            background-color: orange;
+            text-shadow: 1px 1px 1px red;
+            box-shadow: 5px 5px 5px red, 7px 7px 7px #fff;
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+            background-clip: padding-box;
+            color: rgba(2, 7, 21, 0.7);
+
+        }
+
+        .list1,
+        .txt {
+            color: blue;
+
+            font: italic 30px'RixYeoljeongdo_Regular';
+        }
+
+        li div {
+            text-transform: uppercase;
+        }
+
+
+
+        .word {
+
+            /* width: 400px; */
+            border: 1px solid red;
+            text-align: justify;
+            /* width: 200px;
+            border: 1px solid red;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;*/
+        }
+
+        .list li {
+            margin-top: 50px;
+            font-size: 30px;
+            text-transform: capitalize;
+            background-image: url(img/global.png);
+            background-repeat: no-repeat;
+            background-position: 0px center;
+            background-size: 20px;
+            padding-left: 30px;
+        }
+
+        .bg {
+            background-color: #ccc;
+            padding: 30px;
+            font: 30px/0.9 "aral";
+            background-image: url(img/pic1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            background-position: right bottom;
+            background-attachment: fixed;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <ul>
+            <li>
+                <div class="list1">list1</div>
+                <p>내용1</p>
+            </li>
+            <li>
+                <div>list2</div>
+                <p class="txt">내용2</p>
+            </li>
+        </ul>
+        <p>
+            div의 자식
+        </p>
+        <div class="word">
+            텍스트가 콘텐츠 박스의 끝에 도달했을 때 자동으로 줄바꿈하지 않고 오버플로우 되는 텍스트는 숨기고 생략 부호를 표시
+        </div>
+
+        <ul class="list">
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+        </ul>
+    </div>
+    <div class="bg">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque earum impedit, cupiditate quibusdam labore,
+        ipsum accusamus est facilis, possimus debitis libero veritatis. Iste asperiores sed nihil voluptatem praesentium
+        deleniti cumque.
+    </div>
+
+</body>
+
+</html>

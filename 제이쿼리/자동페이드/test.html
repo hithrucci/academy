@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      .bg {
+        width: 300px;
+        height: 5px;
+        background-color: black;
+      }
+      .bar {
+        width: 0%;
+        height: 5px;
+        background-color: #ccc;
+      }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bg">
+        <div class="bar"></div>
+      </div>
+      <div class="bg">
+        <div class="bar"></div>
+      </div>
+      <div class="bg">
+        <div class="bar"></div>
+      </div>
+    </div>
+    <script>
+      total = $(".bg").length;
+      console.log(total);
+      let i = 0;
+      let c = $(".bg").index();
+      $(".bg").on("click", function () {
+        console.log(c);
+      });
+      setInterval(function () {
+        if ((i = total - 1)) {
+          i = 0;
+        } else {
+          i++;
+        }
+
+        $(".bg .bar").eq(i).stop().animate({ width: "100%" }, 2000);
+      }, 2000);
+    </script>
+  </body>
+</html>

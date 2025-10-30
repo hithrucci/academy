@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        #container .con01 {
+            width: 100%;
+            height: 100vh;
+            background-color: #ccc;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .txt {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .txt p {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"></a></h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">메뉴1</a>
+                </li>
+                <li>
+                    <a href="#">메뉴2</a>
+                </li>
+                <li>
+                    <a href="#">메뉴3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="visual">
+
+    </div>
+    <div id="container">
+        <section class="con01">
+            <div class="wrap">
+                <video src="img/204565-924698132_small.mp4" autoplay loop muted></video>
+
+                <div class="txt">
+                    <p>비디오재생 만들기</p>
+                    <p>애니메이션</p>
+                </div>
+            </div>
+        </section>
+        <section class="con02">
+
+        </section>
+        <section class="con03">
+
+        </section>
+    </div>
+    <footer>
+        <address>
+            회사주소
+        </address>
+    </footer>
+</body>
+
+</html>

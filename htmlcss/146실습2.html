@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            text-decoration: inherit;
+            color: lightblue;
+        }
+
+        #wrap {
+            background-image: url(img/bgSquare.png);
+            /*백그라운디 이미지 삽입*/
+            padding: 100px;
+            /*백그라운드 패딩*/
+        }
+
+        #wrap>div {
+            /*id=wrap 직속 div*/
+            width: 60%;
+            margin: 0px auto;
+            /*가운데 정렬(가로)*/
+            background-color: #fff;
+            text-align: center;
+            /*텍스트 가운데 정렬(가로)*/
+            padding: 20px;
+            border-radius: 20px;
+            background-image: url(img/flower.png);
+            background-repeat: no-repeat;
+            /*배경 반복x*/
+            background-position: right bottom;
+            /*배경 위치 지정*/
+        }
+
+        #wrap h4,
+        #wrap p {
+            /*id=wrap의 h4,p 선택자*/
+            text-align: left;
+            /*#wrap>div의 가운데 정렬로 인해 정렬 재설정*/
+            margin: 20px 0px;
+        }
+
+        #wrap img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div>
+            <h3>Lorem Ipsum</h3>
+            <img src="img/drawing5.png" alt="" />
+            <h4>What is Lorem Ipsum</h4>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry
+            </p>
+            <h4>What is Lorem Ipsum</h4>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry
+            </p>
+            <a href="">more</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul:after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        li {
+            background-color: #ccc;
+            float: left;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        div {
+            width: 500px;
+            height: 50vh;
+            background-color: orange;
+        }
+
+        body {
+            height: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+    </ul>
+    <div></div>
+</body>
+
+</html>

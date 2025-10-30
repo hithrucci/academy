@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: "PyeongchangPeace";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2")
+          format("woff2");
+        font-weight: 300;
+        font-display: swap;
+      }
+
+      #clock {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(135, 211, 202);
+        border-radius: 50%;
+
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #fff;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        text-shadow: 1px 1px 3px #ccc;
+        font-family: "PyeongchangPeace";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clock"></div>
+    <script>
+      let clock = document.querySelector("#clock");
+
+      let start = () => {
+        let day = new Date();
+        let hour = day.getHours();
+        let minutes = day.getMinutes();
+        let seconds = day.getSeconds();
+
+        if (hour < 12) {
+          hrs = "AM";
+        } else if (hour > 12) {
+          hrs = "PM";
+          hour = hour - 12;
+        } else if (hour == 12) {
+          hrs = "PM";
+          hour = hour;
+        } else if (hour == 0) {
+          hrs = "AM";
+          hour = "12";
+        }
+        minutes = minutes > 9 ? minutes : `0${minutes}`;
+        seconds = seconds > 9 ? seconds : `0${seconds}`;
+        clock.textContent = `${hrs} ${hour}:${minutes}:${seconds}`;
+      };
+      setInterval(start, 1000);
+    </script>
+  </body>
+</html>

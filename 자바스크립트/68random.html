@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        transition: 4s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <script>
+      let box = document.querySelector("#box");
+      let num = Math.random();
+
+      //   console.log(`${num}<br>`);
+      //   console.log(Math.floor(num));
+      //   console.log(Math.floor(num * 5));
+      //   console.log(Math.floor(num * 100 + 1));
+      start = () => {
+        num = Math.random();
+        let num2 = Math.floor(num * 1000 + 1);
+        box.style.width = num2 + "px";
+        box.style.height = num2 + "px";
+        box.style.margin = num2 + "px";
+      };
+
+      setInterval(start, 4000);
+    </script>
+  </body>
+</html>
+<!--
+random(난수) :: 임의의 숫자, 0보다는 크고 1보다는 작은 수가 발생
+Math는 수학함수
+Math안에 random이 있음
+
+Math.floor(원하는수) :: 소수점 버림
+-->

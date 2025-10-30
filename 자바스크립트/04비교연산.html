@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num1 = 10;
+      let num2 = 20;
+      document.write(`num1이 num2보다 큽니까? ${num1 > num2}<br>`);
+      document.write(`num1이 num2보다 크거나 같습니까? ${num1 >= num2}<br>`);
+      document.write(`num1이 num2보다 작습니까? ${num1 < num2}<br>`);
+      document.write(`num1이 num2보다 작거나 같습니까? ${num1 <= num2}<br>`);
+      document.write(`num1이 num2과 같습니까? ${num1 == num2}<br>`);
+      document.write(`num1이 num2과 같지 않습니까? ${num1 != num2}<br>`);
+
+      let num3 = 10;
+      let char1 = "10";
+      document.write(`num3과 char가 같습니까?${num3 == char1}<br>`); //값이 같으면 true
+      document.write(`num3과 char가 같습니까?${num3 === char1}<br>`); //값과 자료유형 모두 같아야 true
+      document.write(`num3과 char가 같지 않습니까?${num3 != char1}<br>`);
+      document.write(`num3과 char가 같지 않습니까?${num3 !== char1}<br>`);
+    </script>
+  </body>
+</html>
+<!--
+> :: 크다
+>= :: 크거나 같다
+< :: 작다
+<= :: 작거나 같다
+== :: 같다(값 비교)
+=== :: 같다(값,유형 비교) 
+!= :: 같지 않다(값 비교)
+!== :: 같지 않다(값,유형 비교) -> 값의 비교 결과는 true,flase / 자료 유형 비교 결과는 문자,숫자
+-->

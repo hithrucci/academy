@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/*large*/
+.large {
+  width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  gap: 30px;
+}
+.large > li {
+  width: calc(100% / 3);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.large .pic1 {
+  background-image: url(../img/pic1.jpg);
+}
+
+.large .pic2 {
+  background-image: url(../img/pic2.jpg);
+}
+.large .pic3 {
+  background-image: url(../img/pic3.jpg);
+}
+
+/*plus*/
+.plus {
+  position: relative;
+  height: 100%;
+}
+.plus li {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  color: #ccc;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+}
+.pic1 li:nth-child(1) {
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pic1 li:nth-child(2) {
+  right: 50px;
+  bottom: 100px;
+}
+.pic1 li:nth-child(3) {
+  right: 100px;
+  top: 200px;
+}
+.pic2 li:nth-child(1) {
+  left: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pic2 li:nth-child(2) {
+  right: 20px;
+  top: 50px;
+}
+.pic2 li:nth-child(3) {
+  left: 200px;
+  top: 200px;
+}
+.pic3 li {
+  left: 150px;
+  top: 50px;
+  transform: translateY(-50%);
+}
+.plus li.active {
+  color: red;
+  border-color: red;
+}
+.active {
+  color: red;
+  background-color: red;
+}
+
+/*small*/
+.small {
+  display: flex;
+  gap: 30px;
+  width: 1200px;
+  margin: 50px auto;
+  background-color: #ccc;
+}
+.small ul {
+  width: calc(100% / 3);
+  position: relative;
+}
+.small li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.small .bg {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.small li:first-child .bg {
+  background-image: url(../img/pic1.jpg);
+}
+.small li:nth-child(2) .bg {
+  background-image: url(../img/pic2.jpg);
+}
+
+.small li:nth-child(3) .bg {
+  background-image: url(../img/pic3.jpg);
+}
+.small ul li {
+  display: none;
+  gap: 10px;
+}
+
+.small .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.test {
+  color: #ccc;
+  border-color: #ccc;
+}
+.small ul li.on {
+  display: flex;
+}

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+img {
+  display: block;
+}
+/*---------------------*/
+#slider {
+  position: relative;
+  width: 100vw;
+  height: 800px;
+  overflow: hidden;
+}
+
+.panel {
+  display: flex;
+  width: 100%;
+}
+
+/*.panel li*/
+.panel li {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0; /*부모가 display:flex일 때, 
+  부모의 크기가 자식의 크기를 관여하지 못하게 함*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.panel li.list1 {
+  background-image: url(../img/pic1.jpg);
+}
+.panel li.list2 {
+  background-image: url(../img/pic2.jpg);
+}
+.panel li.list3 {
+  background-image: url(../img/pic3.jpg);
+}
+.panel li.list4 {
+  background-image: url(../img/pic4.jpg);
+}
+
+/*panel li .txt*/
+.txt {
+  padding: 200px 100px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.txt h2 {
+  font-size: 50px;
+}
+.txt p {
+  margin: 50px 0px 100px;
+  font-size: 20px;
+}
+.txt div {
+  transform: translateY(50px);
+  color: #ddd;
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  line-height: 60px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+.txt.active {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1.5s;
+}
+
+.txt div a {
+  display: block;
+}
+.txt div:hover {
+  background-color: black;
+  color: #fff;
+}
+
+/*navi*/
+.navi li {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navi .prev {
+  left: 20px;
+}
+.navi .next {
+  right: 20px;
+}
+.navi li i {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+}

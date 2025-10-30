@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+      }
+      .box1 {
+        margin-bottom: 50px;
+      }
+      .box2 {
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <script>
+      let box1 = $(".box1").offset();
+      console.log(box1);
+
+      let box2 = $(".box2").offset();
+      console.log(box2);
+    </script>
+  </body>
+</html>
+<!--
+.offset().top :: 선택자의 y축 위치를 알아내고자 할 때 사용
+(body의 0,0 지점을 기준으로 함)
+
+
+.offset().left :: 선택자의 x축 위치를 알아내고자 할 때 사용
+(body의 0,0 지점을 기준으로 함)
+
+-->

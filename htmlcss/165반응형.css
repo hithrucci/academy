@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@media (max-width:720px) {
+
+    /*----------header----------*/
+    header {
+        background-color: #444;
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    header i {
+        font-size: 20px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+
+    header .hidden ul {
+        position: absolute;
+        z-index: 1;
+        color: #444;
+        background-color: #444;
+        color: #fff;
+        /* font-weight: bold; */
+        padding: 5px;
+        box-shadow: 1px 1px 3px #ccc;
+        font-size: 14px;
+        display: none;
+        width: 150px;
+    }
+
+    header .hidden li {
+        border-bottom: 1px solid #555;
+    }
+
+    header .hidden {
+        border-bottom: 1px solid #555;
+    }
+
+    header i:hover+.hidden ul {
+        display: block;
+    }
+
+    .basic a {
+        display: inline-block;
+    }
+
+    /* 
+    header .basic:hover .hidden ul {
+        display: block;
+    } */
+
+
+
+
+    /*----------visual----------*/
+    #visual {
+        width: 100%;
+        background-image: url(img/avatar_hat.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        height: 300px;
+        filter: blur(2px);
+
+    }
+
+    /*----------container----------*/
+    #container {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .con01 li:first-child {
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .con01 li:last-child {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .con01 ul {
+        margin-bottom: 20px;
+    }
+
+    .con01 img {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 720px) and (max-width:1220px) {
+
+    /*----------header----------*/
+    header {
+        background-color: #444;
+        color: #fff;
+    }
+
+    header .basic i {
+        display: none;
+    }
+
+    header .hidden {
+        display: none;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    header li {
+        padding: 20px 0px;
+    }
+
+
+    /*----------visual----------*/
+    #visual {
+        width: 100%;
+        background-image: url(img/avatar_hat.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        filter: blur(2px);
+
+    }
+
+    /*----------container----------*/
+    #container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .con01 h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .con01 ul {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .con01 li {
+
+        width: calc(100% / 2);
+    }
+
+    .con01 img {
+        width: 100%;
+    }
+}
+
+@media (min-width:1220px) {
+
+    /*----------header----------*/
+    header {
+        background-color: #444;
+        color: #fff;
+    }
+
+    header .basic i {
+        display: none;
+    }
+
+    header .hidden {
+        display: none;
+    }
+
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    header li {
+        padding: 20px 0px;
+    }
+
+
+    /*----------visual----------*/
+    #visual {
+        width: 100%;
+        background-image: url(img/avatar_hat.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        filter: blur(2px);
+
+    }
+
+    /*----------container----------*/
+    #container {
+        width: 1200px;
+        margin: 50px auto;
+    }
+
+    .con01 h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .con01 ul {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .con01 li:last-child {
+        width: 500px;
+        margin: 0px;
+    }
+}

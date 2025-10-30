@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrap {
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    width: 1000px;
+    margin: 0px auto;
+    padding: 30px 80px;
+}
+
+.top {
+    border-bottom: 2px solid #fff;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.search {
+    color: #000;
+    background-color: #fff;
+    width: 700px;
+    margin: 50px auto;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.bottom {
+    margin-top: 50px;
+}

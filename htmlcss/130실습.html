@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        .wrap {
+            background-color: #222;
+            width: 1000px;
+            padding: 30px;
+            margin: 0px auto;
+        }
+
+        ul {
+            display: flex;
+            width: 1000px;
+
+            gap: 20px;
+        }
+
+        li {
+            width: calc(100% / 3);
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .bg1 {
+            background-image: url(img/pic1.jpg);
+        }
+
+        .bg2 {
+            background-image: url(img/pic2.jpg);
+        }
+
+        .bg3 {
+            background-image: url(img/pic3.jpg);
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        .txt {
+            position: absolute;
+            left: 20px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul>
+            <li class="bg1">
+                <div class="txt">
+                    <h4>제조</h4>
+                    <h2>
+                        가장 쉽게 시작하는<br />
+                        제조업 디지털 전환
+                    </h2>
+                </div>
+            </li>
+            <li class="bg2">
+                <div class="txt">
+                    <h4>제조</h4>
+                    <h2>
+                        가장 쉽게 시작하는<br />
+                        제조업 디지털 전환
+                    </h2>
+                </div>
+            </li>
+            <li class="bg3">
+                <div class="txt">
+                    <h4>제조</h4>
+                    <h2>
+                        가장 쉽게 시작하는<br />
+                        제조업 디지털 전환
+                    </h2>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

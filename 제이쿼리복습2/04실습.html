@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/04custom.js"></script>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 30px;
+      }
+      li:nth-child(3) {
+        position: relative;
+      }
+      li:nth-child(3)::after {
+        font-size: 14px;
+        content: "0";
+        color: #fff;
+        background-color: orange;
+        text-align: center;
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        right: 0px;
+      }
+      .box {
+        width: 400px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        display: none;
+      }
+      .box p {
+        text-align: center;
+      }
+      .box p i {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #ccc;
+        border-radius: 20px;
+        margin: 0px auto;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-regular fa-rectangle-list"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </li>
+    </ul>
+    <div class="box">
+      <h3>최근 본 상품</h3>
+      <p>
+        <i class="fa-solid fa-exclamation"></i>
+        최근 본 상품이 없습니다
+      </p>
+    </div>
+  </body>
+</html>

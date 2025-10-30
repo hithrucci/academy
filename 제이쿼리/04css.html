@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      .txt {
+        width: 300px;
+        height: 100px;
+        background-color: #ccc;
+        margin: 50px auto;
+        /* box-sizing: border-box; */
+      }
+      .btn {
+        text-align: center;
+      }
+      .active {
+        color: red;
+        background-color: blue;
+        border: 3px solid orange;
+      }
+      .basic {
+        color: black;
+        background-color: #ccc;
+        border: none;
+        padding: 0px;
+        text-align: left;
+        text-decoration: none;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="txt">글자</div>
+    <div class="btn">
+      <button class="btn1">글자색</button>
+      <button class="btn2">배경</button>
+      <button class="btn3">테두리</button>
+      <button class="btn4">종합</button>
+    </div>
+    <script>
+      $(".btn1").on("click", function () {
+        $(".txt").css({ color: "red" });
+      });
+      $(".btn2").on("click", function () {
+        $(".txt").css({ "background-color": "blue" });
+      });
+      $(".btn3").on("click", function () {
+        $(".txt").css({ border: "3px solid orange" });
+      });
+      $(".btn4").on("click", function () {
+        $(".txt").addClass("active");
+      });
+      $(".txt").on("click", function () {
+        $(this).addClass("basic");
+      });
+    </script>
+  </body>
+</html>
+<!--
+제이쿼리를 이용해서 스타일을 변경할 수 있음
+css는 스타일을 변경할 때 사용함
+
+$("선택자").css({"속성":"속성값","속성":"속성값"})
+
+this는 이벤트가 발생한 선택자를 가리킴
+-->

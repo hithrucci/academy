@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 3000px;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 400px;
+            background-image: url(img/parallax1.jpg);
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+
+
+        }
+
+        .wrap p {
+            background-color: rgba(0, 0, 0, .5);
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 30px;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <p>my website logo</p>
+    </div>
+</body>
+
+</html>

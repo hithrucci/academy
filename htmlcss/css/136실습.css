@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    height: 600px;
+    background-color: #eee;
+    margin: 0px auto;
+}
+
+.left h2 {
+    font-size: 34px;
+}
+
+.left p {
+    font-size: 14px;
+    color: #333;
+    margin: 20px 0px;
+}
+
+.left ul {
+    display: flex;
+    gap: 10px;
+}
+
+
+.left li {
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.left .program {
+    background-color: #202936;
+    color: #ddd;
+}
+
+.left .partner {
+    border: 1px solid #ccc;
+}
+
+.right {
+
+    position: relative;
+}
+
+.right .main {
+    width: 520px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #333;
+    border-radius: 10px;
+
+}
+
+.right .growth {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #00C85F;
+    border: 1px solid #333;
+    width: 120px;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: -30px;
+    bottom: 180px;
+
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: -30px;
+    bottom: 80px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.right .pship {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0086FF;
+    position: absolute;
+    bottom: 20px;
+    left: 360px;
+
+}

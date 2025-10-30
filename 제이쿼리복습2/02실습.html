@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/02custom.js"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      ul {
+        list-style: none;
+        font-weight: bold;
+      }
+
+      .gnb {
+        margin: 20px auto;
+        font-size: 1rem;
+        display: flex;
+        gap: 50px;
+      }
+
+      .gnb span {
+        display: flex;
+        justify-content: center;
+      }
+
+      .subMenu {
+        width: 107px;
+        color: #133e35;
+        background-color: #f4f4f1;
+        border-radius: 10px;
+        padding: 0px 25px;
+        display: none;
+        margin: 20px auto;
+        border: 1px solid #eae9e4;
+      }
+      .subMenu li {
+        margin: 16px 0px;
+      }
+      .gnb i {
+        transition: 0.5s;
+      }
+      .subMenu2 li {
+        padding: 10px;
+        border-radius: 5px;
+        line-height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="gnb">
+      <li>
+        <a href="#"
+          ><span>Community<i class="icons fa-solid fa-chevron-down"></i></span
+        ></a>
+        <ul class="subMenu">
+          <li><a href="#">Create Me</a></li>
+          <li><a href="#">News & Press</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"
+          ><span>Help<i class="icons fa-solid fa-chevron-down"></i></span
+        ></a>
+        <ul class="subMenu2 subMenu">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Stories</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+  <!--
+  rem = html의 n배
+  vw = 화면 너비값
+  vh = 화면 높이값
+--></html>

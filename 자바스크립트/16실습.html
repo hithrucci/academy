@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num1 = parseInt(prompt("1과목 점수를 입력하세요"));
+      let num2 = parseInt(prompt("2과목 점수를 입력하세요"));
+      let avg = (num1 + num2) / 2;
+      let comment;
+      //   console.log(avg);
+      //   if (avg >= 60) {
+      //     if (num1 >= 40 && num2 >= 40) {
+      //       comment = `당신의 평균은 ${avg}이며, 합격입니다.`;
+      //     } else {
+      //       comment = `당신의 평균은 ${avg}이며, 불합격입니다.`;
+      //     }
+      //   } else {
+      //     comment = `당신의 평균은 ${avg}이며, 불합격입니다.`;
+      //   }
+      //   document.write(comment);
+
+      console.log(avg);
+      if (avg >= 60) {
+        if (num1 < 40) {
+          comment = `당신의 평균은 ${avg}이지만, 1과목이 ${num1}점이므로 불합격입니다.`;
+        } else if (num2 < 40) {
+          comment = `당신의 평균은 ${avg}이지만, 2과목이 ${num2}점이므로 불합격입니다.`;
+        } else {
+          comment = `당신의 평균은 ${avg}이고, 1과목 점수 ${num1}점, 2과목 점수 ${num2}점으로 합격입니다.`;
+        }
+      } else {
+        comment = `당신의 평균은 ${avg}이며, 불합격입니다.`;
+      }
+      document.write(comment);
+    </script>
+  </body>
+</html>
+<!--
+과목은 세 과목이며
+평균 60점 이상이고
+모든 과목 점수가 40점 이상이면 합격
+
+한 과목이라도 과락이 있을 경우 불합격
+-->

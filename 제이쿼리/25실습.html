@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <style>
+      .wrap {
+        /* margin: 50px auto;
+        width: 900px; */
+
+        /* overflow: hidden; */
+      }
+      /* body {
+        height: 2000px;
+      } */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+        width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+        /* position: relative; */
+      }
+      li {
+        width: calc(100% / 4);
+        height: 300px;
+        /* font-size: 24px;
+        border-radius: 20px;
+        text-align: center;
+        /* display: flex; */
+        /* justify-content: center;
+        align-items: center;
+        font-weight: bold; */
+        /* position: absolute; */
+      }
+      .bg1 {
+        background-color: aquamarine;
+      }
+      .bg2 {
+        background-color: antiquewhite;
+      }
+      .bg3 {
+        background-color: blue;
+      }
+      .bg4 {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="bg1">1</li>
+      <li class="bg2">2</li>
+      <li class="bg3">3</li>
+      <li class="bg4">4</li>
+    </ul>
+
+    <script>
+      setInterval(function () {
+        $("ul").animate({ transform: "translateX(-300px)" }, function () {
+          $("li:first-child").appendTo("ul");
+          $("ul").css({ transform: "translateX(0px)" });
+        });
+      }, 1500);
+    </script>
+  </body>
+</html>

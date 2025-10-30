@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = 5;
+      document.write(
+        `num변수에 3을 더해서 num변수에 넣음<br>${(num += 3)}<br>`
+      );
+      document.write(`num변수에 3을 빼서 num변수에 넣음<br>${(num -= 3)}<br>`);
+      document.write(
+        `num변수에 3을 곱해서 num변수에 넣음<br>${(num *= 3)}<br>`
+      );
+      document.write(
+        `num변수에 3을 나눠서 num변수에 넣음<br>${(num /= 3)}<br>`
+      );
+      document.write(
+        `num변수에 3을 나눈 나머지를 num변수에 넣음<br>${(num %= 3)}<br>`
+      );
+    </script>
+  </body>
+</html>
+<!--
+대입연산자는 연산을 한 후 변수에 넣는다는 의미
+total = total + 1 ==> total += 1
+total = num + 3
+
+num = num + 2 ==> num += 2
+num = num - 2 ==> num -= 2
+num = num * 2 ==> num *= 2
+num = num / 2 ==> num /= 2
+num = num % 2 ==> num %= 2
+
+
+-->

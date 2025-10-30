@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, 2, 3, 4, 5];
+      let numbers2 = numbers.map((num) => num * 2);
+      console.log(`numbers:${numbers}`);
+      console.log(`numbers2:${numbers2}`);
+      console.log(numbers === numbers2);
+    </script>
+  </body>
+</html>
+<!--
+1.기본형식
+중괄호를 쓰고 return을 사용함
+중괄호를 쓰면 return을 꼭 써야 값이 반환됨
+
+2.축약형식
+중괄호와 return을 안씀.
+조건은 실행할 코드가 한 줄일 때만
+-->

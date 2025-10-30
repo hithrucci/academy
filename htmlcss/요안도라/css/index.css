@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    margin-bottom: 20px;
+    height: 95px;
+    object-fit: cover;
+}
+
+#wrap {
+    padding: 0px 30px;
+}
+
+#visual {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+
+    text-align: center;
+    position: relative;
+
+
+}
+
+#visual h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-family: "Song Myung", serif;
+    font-weight: 600
+}
+
+#visual,
+#header {
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header {
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#header h1 {
+    font-size: 24px;
+    font-weight: 500
+}
+
+#header ul {
+    display: flex;
+    gap: 30px;
+    color: #ddd;
+}
+
+#container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.conLeft p {
+    font-size: 13px;
+    word-break: keep-all;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.conLeft h4 {
+    margin: 20px 0px;
+    font-size: 15px;
+}
+
+#footer {
+    background-color: #000;
+
+    color: #ddd;
+    text-align: center;
+    font-size: 12px;
+    padding: 30px 0px;
+    margin-top: 50px;
+}
+
+#footer .copy {
+    font-style: italic;
+    margin-top: 10px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      body {
+        height: 3000px;
+        width: 200%;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <p>내용입니다</p>
+    <div></div>
+    <script>
+      $(window).on("scroll", function () {
+        let scLeft = $(this).scrollLeft();
+        console.log(scLeft);
+        $("div").text(scLeft);
+        if (scLeft >= 100) {
+          $("div")
+            .stop()
+            .animate({ width: `${scLeft}px` });
+        }
+      });
+
+      //   $(window).on("scroll", function () {
+      //     let sc = $(this).scrollTop();
+      //     console.log(sc);
+      //     $("div").text(sc);
+      //     if (sc >= 100 && sc <= 500) {
+      //       $("div").css({ "background-color": "red" });
+      //     } else {
+      //       $("div").css({ "background-color": "#ccc" });
+      //     }
+      //   });
+
+      //   $(window).on("scroll", function () {
+      //     let scLeft = $(this).scrollLeft();
+      //     console.log(scLeft);
+      //     $("div").text(scLeft);
+      //     if (scLeft >= 100) {
+      //       //   $("div")
+      //       //     .stop()
+      //       //     .animate({ width: scLeft + "px" });
+      //       $("div")
+      //         .stop()
+      //         .animate({ width: `${scLeft}px` });
+      //     }
+      //   });
+    </script>
+  </body>
+</html>
+<!--
+
+scrollTop() :: 수직 스크롤바 위치값을 나타냄(수직 스크롤이 있어야 함)
+scrollLeft() :: 수평 스크롤바 위치값을 나타냄(수평 스크롤이 있어야 함)
++ :: 덧셈, 문자가 오면 결합을 한다는 의미도 있음
+지금은 결합할 때 +을 사용하지 않고 `${}` 사용
+-->
